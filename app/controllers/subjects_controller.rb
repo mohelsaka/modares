@@ -2,7 +2,11 @@ class SubjectsController < ApplicationController
   # GET /subjects
   # GET /subjects.json
   def index
-    @subjects = Subject.all
+    @semester
+    @semester = Semester.find(params[:semester]) if params[:semester]
+    
+    @subjects = @semester.nil? ?  Subject.all : @semester.subjects
+    
 
     respond_to do |format|
       format.html # index.html.erb
@@ -25,6 +29,7 @@ class SubjectsController < ApplicationController
   # GET /subjects/new.json
   def new
     @subject = Subject.new
+    @subject.semester_id = params[:semester]
 
     respond_to do |format|
       format.html # new.html.erb

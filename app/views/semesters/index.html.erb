@@ -24,6 +24,8 @@
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_semester_path(semester), :class => 'btn btn-mini' %>
+          <%= link_to t("subjects"),
+                      subjects_path(:semester => semester.id), :class => 'btn btn-mini' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       semester_path(semester),
                       :method => :delete,
