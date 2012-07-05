@@ -1,4 +1,8 @@
 class SubjectsController < ApplicationController
+  before_filter :authenticate_user!
+
+
+  
   # GET /subjects
   # GET /subjects.json
   def index

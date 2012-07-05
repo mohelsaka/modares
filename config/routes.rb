@@ -1,4 +1,6 @@
 Modares::Application.routes.draw do
+  devise_for :users
+
   resources :levels
   
   resources :semesters
