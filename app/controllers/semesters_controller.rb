@@ -2,8 +2,11 @@ class SemestersController < ApplicationController
   # GET /semesters
   # GET /semesters.json
   def index
-    @semesters = Semester.all
-
+    if params[:level_id]
+      @semesters = Semester.find(:all)
+    else 
+      @semesters = Semester.find_all_by_level_id(params[:level]) || []
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @semesters }
@@ -25,6 +28,7 @@ class SemestersController < ApplicationController
   # GET /semesters/new.json
   def new
     @semester = Semester.new
+    @semester.level_id = params[:level]
 
     respond_to do |format|
       format.html # new.html.erb
@@ -74,9 +78,9 @@ class SemestersController < ApplicationController
   def destroy
     @semester = Semester.find(params[:id])
     @semester.destroy
-
+    
     respond_to do |format|
-      format.html { redirect_to semesters_url }
+      format.html { redirect_to semesters_url(:level => @semester.level_id) }
       format.json { head :ok }
     end
   end

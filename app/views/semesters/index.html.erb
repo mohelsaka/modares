@@ -36,5 +36,5 @@
 </table>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
-            new_semester_path,
+            new_semester_path(:level => params[:level]),
             :class => 'btn btn-primary' %>

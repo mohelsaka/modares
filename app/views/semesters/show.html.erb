@@ -14,7 +14,7 @@
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
-              semesters_path, :class => 'btn'  %>
+              semesters_path(:level => @semester.level_id), :class => 'btn'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
               edit_semester_path(@semester), :class => 'btn' %>
   <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
