@@ -11,11 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120705123648) do
+ActiveRecord::Schema.define(:version => 20120705130229) do
 
   create_table "levels", :force => true do |t|
     t.string   "name"
-    t.integer  "parent_level_id"
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
