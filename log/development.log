@@ -24158,3 +24158,3496 @@ AbstractController::ActionNotFound (The action 'facebook' could not be found for
   
 
 Rendered /home/saka/.rvm/gems/ruby-1.9.2-p290@rails3/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/levels" for 127.0.0.1 at 2012-07-08 15:51:31 +0200
+  Processing by LevelsController#index as HTML
+  [1m[36mAdmin Load (14.8ms)[0m  [1mSELECT `admins`.* FROM `admins` WHERE `admins`.`id` = 1 LIMIT 1[0m
+Completed 401 Unauthorized in 97ms
+
+
+Started GET "/levels" for 127.0.0.1 at 2012-07-08 15:51:31 +0200
+  Processing by LevelsController#index as HTML
+Completed 401 Unauthorized in 14ms
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 15:51:31 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (1.9ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 570ms (Views: 546.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /semesters.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /subjects.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /semesters.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /subjects.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (73ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 15:51:33 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 15:53:11 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (0.2ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 338ms (Views: 106.5ms | ActiveRecord: 206.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap_and_overrides.css - 200 OK (98ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /levels.css - 200 OK (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /scaffolds.css - 200 OK (13ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /semesters.css - 200 OK (17ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /subjects.css - 200 OK (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /jquery.js - 200 OK (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (21ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (11ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (65ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /twitter/bootstrap.js - 200 OK (10ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /levels.js - 200 OK (26ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap.js - 200 OK (3ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /semesters.js - 200 OK (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /subjects.js - 200 OK (12ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/core.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 200 OK (12ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 200 OK (21ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 200 OK (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:12 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:13 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:13 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:13 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:13 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:13 +0200
+Served asset /bootstrap-datepicker/index.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 15:53:13 +0200
+Served asset /application.js - 200 OK (14ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (0.2ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (6.4ms)
+Compiled application.css  (6ms)  (pid 18164)
+Completed 200 OK in 237ms (Views: 168.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:18 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:19 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:19 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:19 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:19 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:19 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:19 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:19 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:19 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:19 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:19 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (0.1ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (5.0ms)
+Compiled application.css  (43ms)  (pid 18164)
+Completed 200 OK in 132ms (Views: 112.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:44 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 15:57:45 +0200
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 15:58:41 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (0.2ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (5.3ms)
+Compiled bootstrap_and_overrides.css  (1734ms)  (pid 18164)
+Compiled application.css  (7ms)  (pid 18164)
+Completed 200 OK in 1865ms (Views: 1839.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 15:58:43 +0200
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 15:58:43 +0200
+Served asset /bootstrap_and_overrides.css - 200 OK (75ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 15:58:44 +0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (0.1ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 185ms (Views: 97.1ms | ActiveRecord: 68.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:10 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:11 +0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:23:12 +0200
+Served asset /fontawesome-webfont.woff - 200 OK (34ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (0.1ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 74ms (Views: 52.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:37 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:23:38 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:24:14 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (0.2ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 154ms (Views: 133.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /levels.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:57 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:24:58 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (0.1ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 80ms (Views: 57.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /levels.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:27 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:26:28 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (0.2ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 73ms (Views: 54.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:27 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:27:28 +0200
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:27:29 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 16:38:38 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (1.6ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (58.8ms)
+Compiled application.css  (8ms)  (pid 19929)
+Compiled home.css  (32ms)  (pid 19929)
+Compiled application.js  (36ms)  (pid 19929)
+Compiled home.js  (118ms)  (pid 19929)
+Completed 200 OK in 971ms (Views: 873.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /levels.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /semesters.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /subjects.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (77ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /levels.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /semesters.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /subjects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (68ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:38:40 +0200
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:38:41 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (4ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2012-07-08 16:38:51 +0200
+
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 16:39:40 +0200
+Served asset /rails.png - 200 OK (19ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 16:39:56 +0200
+Served asset /rails.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 16:39:58 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 16:39:59 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 16:40:02 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 16:40:05 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 16:40:07 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 16:40:08 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2012-07-08 16:40:11 +0200
+
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (40.7ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 16:40:14 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2012-07-08 16:40:30 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 151ms (Views: 150.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /levels.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /subjects.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /semesters.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /levels.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /semesters.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /subjects.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:31 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:40:32 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 16:40:45 +0200
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /scaffolds.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /semesters.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:41:38 +0200
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:41:39 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-08 16:42:21 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.2ms)
+Compiled bootstrap_and_overrides.css  (1699ms)  (pid 19994)
+Compiled application.css  (11ms)  (pid 19994)
+Completed 200 OK in 1815ms (Views: 1811.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap_and_overrides.css - 200 OK (9ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (83ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:23 +0200
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:42:24 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/levels" for 127.0.0.1 at 2012-07-08 16:42:48 +0200
+  Processing by LevelsController#index as HTML
+Completed 401 Unauthorized in 18ms
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (1.5ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 152ms (Views: 73.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:49 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:50 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:50 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:50 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:50 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:50 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:50 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:50 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:50 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:42:50 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:42:50 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (1ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/shared/_links.erb (0.1ms)
+Rendered /home/mahmoud/.rvm/gems/ruby-1.9.3-p194@modres/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 79ms (Views: 55.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (87ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:35 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:36 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:36 +0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:43:36 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /levels.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /levels.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.de.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.da.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.br.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.br.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.cs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.es.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.is.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.lv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.it.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.fi.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nb.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.nl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:43 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.pl.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.sv.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.th.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.ru.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:44 +0200
+Served asset /bootstrap-datepicker/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:44 +0200
+Served asset /bootstrap-datepicker/locales/bootstrap-datepicker.tr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 16:43:44 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2012-07-08 16:43:44 +0200
+Served asset /fontawesome-webfont.woff - 304 Not Modified (0ms)

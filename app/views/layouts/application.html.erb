@@ -1,14 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Modares</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+		<title>Modares</title>
+		<%= stylesheet_link_tag    "application" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
 
-<%= yield %>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+					<a class="brand" href="#">Project name</a>
+					<div class="btn-group pull-right">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-user"></i> Username <span class="caret"></span> </a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Profile</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">Sign Out</a>
+							</li>
+						</ul>
+					</div>
+					<div class="nav-collapse">
+						<ul class="nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#about">About</a>
+							</li>
+							<li>
+								<a href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
 
-</body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span9">
+					<%= yield %>
+				</div>
+
+				<div class="span3">
+					<div class="well sidebar-nav">
+						<ul class="nav nav-list">
+							<li class="nav-header">
+								Sidebar
+							</li>
+							<li class="active">
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li class="nav-header">
+								Sidebar
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li class="nav-header">
+								Sidebar
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+							<li>
+								<a href="#">Link</a>
+							</li>
+						</ul>
+					</div><!--/.well -->
+				</div><!--/span-->
+			</div><!--/row-->
+
+			<hr>
+
+			<footer>
+				<p>
+					© Company 2012
+				</p>
+			</footer>
+
+		</div><!--/.fluid-container-->
+
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+
+	</body>
 </html>
