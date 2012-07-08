@@ -11,8 +11,21 @@
 
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
+  
+  <div><%= f.label :first_name %><br />
+  <%= f.text_field :first_name %></div>
+  
+  <div><%= f.label :last_name %><br />
+  <%= f.text_field :last_name %></div>
+  
+    <div><%= f.label :birth_date %><br />
+  <%= f.text_field :birth_date, "data-behaviour" => "datepicker", :class => "datepicker", "readonly" =>"readonly" %></div>
+  
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>
+<script>
+	$('.datepicker').datepicker({"format": "yyyy-mm-dd", "weekStart": 1, "autoclose": true});
+</script>
 
 <%= render "devise/shared/links" %>
