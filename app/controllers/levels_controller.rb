@@ -1,9 +1,6 @@
 class LevelsController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :authenticate_admin!
 
-  def should_be_admin
-    
-  end
   # GET /levels
   # GET /levels.json
   def index
