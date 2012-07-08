@@ -20466,3 +20466,145 @@ Served asset /application.js - 200 OK (4ms)
 
 
 Started GET "/users/auth/facebook" for 127.0.0.1 at 2012-07-08 12:43:21 +0200
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateLevels (20120705121104)
+Migrating to CreateSemesters (20120705123619)
+Migrating to CreateSubjects (20120705123648)
+Migrating to RemoveParentFromLevel (20120705130229)
+Migrating to DeviseCreateUsers (20120705160501)
+Migrating to AddAdminColumnToUsers (20120705162341)
+Migrating to CreateAdmins (20120708092514)
+Migrating to RemoveIsAdminColFromUsers (20120708093542)
+Migrating to AddColumnsToUsers (20120708101519)
+Migrating to AddUserFieldsColumns (20120708110759)
+  [1m[35m (30.1ms)[0m  ALTER TABLE `users` ADD `first_name` varchar(255)
+  [1m[36m (15.1ms)[0m  [1mALTER TABLE `users` ADD `last_name` varchar(255)[0m
+  [1m[35m (22.2ms)[0m  ALTER TABLE `users` ADD `birth_date` date
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120708110759')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 13:11:24 +0200
+Served asset /rails.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-07-08 13:11:30 +0200
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-07-08 13:11:38 +0200
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/saka/.rvm/gems/ruby-1.9.2-p290@rails3/gems/devise-2.1.2/app/views/devise/shared/_links.erb (2.5ms)
+Rendered /home/saka/.rvm/gems/ruby-1.9.2-p290@rails3/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (77.6ms)
+Completed 200 OK in 412ms (Views: 231.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-08 13:11:38 +0200
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-07-08 13:11:38 +0200
+Served asset /bootstrap_and_overrides.css - 200 OK (4ms)
+
+
+Started GET "/assets/levels.css?body=1" for 127.0.0.1 at 2012-07-08 13:11:38 +0200
+Served asset /levels.css - 200 OK (4ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-07-08 13:11:38 +0200
+Served asset /semesters.css - 200 OK (2ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-07-08 13:11:38 +0200
+Served asset /subjects.css - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-08 13:11:38 +0200
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:38 +0200
+Served asset /jquery.js - 200 OK (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /twitter/bootstrap.js - 200 OK (9ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /bootstrap.js - 200 OK (2ms)
+
+
+Started GET "/assets/levels.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /levels.js - 200 OK (4ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /subjects.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-07-08 13:11:39 +0200
+Served asset /semesters.js - 200 OK (2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2012-07-08 13:11:45 +0200
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered /home/saka/.rvm/gems/ruby-1.9.2-p290@rails3/gems/devise-2.1.2/app/views/devise/shared/_links.erb (1.7ms)
+Rendered /home/saka/.rvm/gems/ruby-1.9.2-p290@rails3/gems/devise-2.1.2/app/views/devise/registrations/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 65ms (Views: 51.4ms | ActiveRecord: 3.1ms)
