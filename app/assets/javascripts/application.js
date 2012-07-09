@@ -16,3 +16,10 @@
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.fr
+$(document).ready(function(){
+  $("#search-container #levels-drop-down li a").click(function(){
+  	$("#drop-down-action").html($(this).html());
+    // alert();
+    return false;
+ });
+});
