@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @resource = User.new  
+    @levels = Level.all
   end
 end
