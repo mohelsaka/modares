@@ -1,0 +1,51 @@
+!!!
+%html
+  %head
+    %title Modares
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = javascript_include_tag :src => "http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"
+    = csrf_meta_tags
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "#"} Project name
+          .nav-collapse
+            %ul.nav
+              %li.active
+                %a{:href => "#"} Home
+              %li
+                %a{:href => "#about"} About
+              %li
+                %a{:href => "#contact"} Contact
+          / /.nav-collapse
+    .container
+      = yield
+      %hr/
+      %footer
+        %p
+          \&copy; Company 2012
+    / /container
+    /
+      Le javascript
+      \==================================================
+    / Placed at the end of the document so the pages load faster
+    /
+      <script src="../assets/js/jquery.js"></script>
+      <script src="../assets/js/bootstrap-transition.js"></script>
+      <script src="../assets/js/bootstrap-alert.js"></script>
+      <script src="../assets/js/bootstrap-modal.js"></script>
+      <script src="../assets/js/bootstrap-dropdown.js"></script>
+      <script src="../assets/js/bootstrap-scrollspy.js"></script>
+      <script src="../assets/js/bootstrap-tab.js"></script>
+      <script src="../assets/js/bootstrap-tooltip.js"></script>
+      <script src="../assets/js/bootstrap-popover.js"></script>
+      <script src="../assets/js/bootstrap-button.js"></script>
+      <script src="../assets/js/bootstrap-collapse.js"></script>
+      <script src="../assets/js/bootstrap-carousel.js"></script>
+      <script src="../assets/js/bootstrap-typeahead.js"></script>

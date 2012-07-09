@@ -1,0 +1,35 @@
+- model_class = Semester.new.class
+.page-header
+  %h1= t '.title', :default => model_class.model_name.human.pluralize
+%table.table.table-striped
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:description)
+      %th= model_class.human_attribute_name(:level_id)
+      %th= model_class.human_attribute_name(:created_at)
+      %th= t '.actions', :default => t("helpers.actions")
+  %tbody
+    - @semesters.each do |semester|
+      %tr
+        %td= link_to semester.id, semester_path(semester)
+        %td= semester.name
+        %td= semester.description
+        %td= semester.level_id
+        %td= l semester.created_at
+        %td
+          = link_to t('.edit', :default => t("helpers.links.edit")), |
+            edit_semester_path(semester), :class => 'btn btn-mini'   |
+          -#
+          = link_to t("subjects"),                                            |
+            subjects_path(:semester => semester.id), :class => 'btn btn-mini' |
+          -#
+          = link_to t('.destroy', :default => t("helpers.links.destroy")),                                  |
+            semester_path(semester),                                                                        |
+            :method => :delete,                                                                             |
+            :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')), |
+            :class => 'btn btn-mini btn-danger'                                                             |
+= link_to t('.new', :default => t("helpers.links.new")), |
+  new_semester_path(:level => params[:level]),           |
+  :class => 'btn btn-primary'                            |

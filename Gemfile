@@ -33,6 +33,10 @@ gem 'jquery-rails'
 # To use debugger
 gem 'ruby-debug19', :require => 'ruby-debug'
 
+# To use haml
+gem "haml"
+gem "erb2haml"
+
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false

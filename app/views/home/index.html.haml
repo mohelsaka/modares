@@ -1,0 +1,51 @@
+/ Silde Show
+.hero-unit
+  %h1 Hello, world!
+  %p
+    This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+  %p
+    %a.btn.btn-primary.btn-large Learn more &raquo;
+/ Newest videos image flow
+.row
+/ Dropdown search
+#search-container.well.form-inline
+  #levels-drop-down.btn-group.span5
+    %a.btn.dropdown-toggle.btn-primary.span4{"data-toggle" => "dropdown", :href => "#"}
+      %span#drop-down-action Action
+      %span.caret
+    %ul.dropdown-menu
+      / dropdown menu links
+      - @levels.each do |level|
+        %li.nav-header
+          %p
+            = level.name
+        - level.semesters.each do |semester|
+          %li
+            %a{:href => "#"}= semester.name
+        %li.divider
+  .btn-group.span5
+    %a.btn.dropdown-toggle.btn-primary.span4{"data-toggle" => "dropdown", :href => "#"}
+      Action
+      %span.caret
+    %ul.dropdown-menu
+      / dropdown menu links
+/ Video Results
+.row
+  .span4
+    %h2 Heading
+    %p
+      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    %p
+      %a.btn{:href => "#"} View details &raquo;
+  .span4
+    %h2 Heading
+    %p
+      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    %p
+      %a.btn{:href => "#"} View details &raquo;
+  .span4
+    %h2 Heading
+    %p
+      Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+    %p
+      %a.btn{:href => "#"} View details &raquo;
