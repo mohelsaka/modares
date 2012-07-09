@@ -4,27 +4,35 @@
 		<title>Modares</title>
 		<%= stylesheet_link_tag    "application" %>
 		<%= javascript_include_tag "application" %>
+		<%= javascript_include_tag :src => "http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js" %>
+
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
-
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container-fluid">
 					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
 					<a class="brand" href="#">Project name</a>
-					<div class="btn-group pull-right">
-						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-user"></i> Username <span class="caret"></span> </a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="#">Profile</a>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<a href="#">Sign Out</a>
-							</li>
-						</ul>
+					<!-- Log in area -->
+					<a class="btn pull-right" data-toggle="modal" href="#log-in" >Log in</a>
+					
+					<div class="modal hide" id="log-in">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								×
+							</button>
+							<h3>Modal header</h3>
+						</div>
+						<div class="modal-body">
+							<%= render :partial => 'users/sessions/new' %>
+						</div>
+						<div class="modal-footer">
+							<a href="#" class="btn" data-dismiss="modal">Close</a>
+							<a href="#" class="btn btn-primary">Save changes</a>
+						</div>
 					</div>
+					<!-- End of Log in area -->
 					<div class="nav-collapse">
 						<ul class="nav">
 							<li class="active">
@@ -41,13 +49,11 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span9">
 					<%= yield %>
 				</div>
-
 				<div class="span3">
 					<div class="well sidebar-nav">
 						<ul class="nav nav-list">
@@ -103,20 +109,15 @@
 					</div><!--/.well -->
 				</div><!--/span-->
 			</div><!--/row-->
-
 			<hr>
-
 			<footer>
 				<p>
 					© Company 2012
 				</p>
 			</footer>
-
 		</div><!--/.fluid-container-->
-
 		<!-- Le javascript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-
 	</body>
 </html>
