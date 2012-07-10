@@ -17,9 +17,19 @@
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.fr
 $(document).ready(function(){
-  $("#search-container #levels-drop-down li a").click(function(){
+  $("#levels-drop-down li a").click(function(){
   	$("#drop-down-action").html($(this).html());
-    // alert();
+  	var id = $(this).attr('semester_id');
+  	$('#subjects li').addClass('hidden');
+  	$('#subjects li[semester='+id+']').removeClass('hidden');
+  	$("#levels-drop-down").removeClass('open');
+  	
+  	if($('#subjects-drop-down li:not(.hidden)').size()==0){
+  		$('#subjects-drop-down #subjectName').html("Empty");
+  	}else{
+  		$('#subjects-drop-down #subjectName').html("Subjects");
+  		$('#subjects-drop-down').addClass('open');  		
+  	}
     return false;
  });
 });
