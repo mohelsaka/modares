@@ -1,0 +1,11 @@
+.thumbnail
+  = image_tag video_thumb.icon.url(:medium)
+  .caption
+    %h5
+      = video_thumb.title
+    %p
+      %b Views:
+      = video_thumb.views
+    %p
+      %b User:
+      = video_thumb.user.first_name + " " + video_thumb.user.last_name
