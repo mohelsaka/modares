@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120710091151) do
+ActiveRecord::Schema.define(:version => 20120710094053) do
 
   create_table "admins", :force => true do |t|
     t.string   "email"
@@ -74,6 +74,10 @@ ActiveRecord::Schema.define(:version => 20120710091151) do
     t.integer  "subject_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "icon_file_name"
+    t.string   "icon_content_type"
+    t.integer  "icon_file_size"
+    t.datetime "icon_updated_at"
   end
 
 end

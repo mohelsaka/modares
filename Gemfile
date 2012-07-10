@@ -10,7 +10,7 @@ gem 'devise'
 gem "omniauth-facebook"
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-datepicker-rails'
-
+gem "paperclip", "~> 3.0"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -31,7 +31,7 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'ruby-debug19', :require => 'ruby-debug'
+#gem 'ruby-debug19', :require => 'ruby-debug'
 
 # To use haml
 gem "haml"
