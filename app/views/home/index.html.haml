@@ -30,9 +30,10 @@
     %ul.dropdown-menu{:id => 'subjects'}
       - @subjects.each do |subject|
         %li.hidden{:semester => subject.semester_id}
-          %a{:href => "#"}= subject.name
+          = link_to subject.name, {:action => 'get_videos', :subject => subject.id}, :remote => true 
+          -# %a{:href => "#"}= subject.name
       / dropdown menu links
 / Video Results
 .row
-  .span3
+  #videos-list.span3
     = render :partial => 'videos/video_thumb', :collection => @videos

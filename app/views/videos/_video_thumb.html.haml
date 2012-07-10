@@ -4,8 +4,10 @@
     %h5
       = video_thumb.title
     %p
-      %b Views:
+      = truncate(video_thumb.description, :length => 70)
+    %p
+      %b.icon-eye-open
       = video_thumb.views
     %p
-      %b User:
+      %b.icon-user
       = video_thumb.user.first_name + " " + video_thumb.user.last_name
