@@ -11,3 +11,36 @@
  *= require bootstrap_and_overrides
  *= require bootstrap-datepicker
  */
+
+div.caption{
+	position: relative;
+	text-shadow: 0 1px 1px #999;
+	text-transform: capitalize;
+}
+
+.thumbnail {
+	height: 150px;
+	overflow: hidden;
+}
+h5.thumb-title{
+	text-align: center;
+}
+p.reviews{
+	text-align: left;
+}
+
+a.thumbnail.wrapper{
+	text-decoration: none;
+	text-shadow: 0 1px 1px #999;
+	margin-bottom: 10px;
+	width: 135px
+}
+
+
+#videos-list {
+	margin-top: 50px;
+	margin-left: 0px;
+}
+a.btn.dropdown-toggle.btn-large.btn-primary.span4{
+	color: white;
+}

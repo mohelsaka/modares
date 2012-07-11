@@ -10,6 +10,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/public/system
 #Ignore setup mail file
 #/config/initializers/setup_mail.rb
 *.erb~

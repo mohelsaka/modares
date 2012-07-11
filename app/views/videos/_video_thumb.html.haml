@@ -1,13 +1,13 @@
-.thumbnail
-  = image_tag video_thumb.icon.url(:medium)
-  .caption
-    %h5
-      = video_thumb.title
+%a.thumbnail.wrapper.span2{"title" => video_thumb.title}
+  %h5.thumb-title
+    = truncate(video_thumb.title, :length => 20)
+  = image_tag video_thumb.icon.url(:medium), :height => 90, :width => 120
+  %p.reviews
+    %b.icon-eye-open
+    = video_thumb.views
+    %br
+    %b.icon-user
+    = video_thumb.user.first_name + " " + video_thumb.user.last_name
+  .caption.hidden
     %p
-      = truncate(video_thumb.description, :length => 70)
-    %p
-      %b.icon-eye-open
-      = video_thumb.views
-    %p
-      %b.icon-user
-      = video_thumb.user.first_name + " " + video_thumb.user.last_name
+      = truncate(video_thumb.description, :length => 65)

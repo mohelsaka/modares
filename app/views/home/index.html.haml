@@ -10,7 +10,7 @@
 / Dropdown search
 #search-container.well.form-inline
   #levels-drop-down.btn-group.span5
-    %a.btn.dropdown-toggle.btn-primary.span4{"data-toggle" => "dropdown", :href => "#"}
+    %a.btn.dropdown-toggle.btn-large.btn-primary.span4{"data-toggle" => "dropdown", :href => "#"}
       %span#drop-down-action Semesters
       %span.caret
     %ul.dropdown-menu
@@ -24,16 +24,15 @@
             %a{:href => "#", :semester_id => semester.id}= semester.name
         %li.divider
   #subjects-drop-down.btn-group.span5
-    %a.btn.dropdown-toggle.btn-primary.span4{"data-toggle" => "dropdown", :href => "#"}
+    %a.btn.dropdown-toggle.btn-primary.btn-large.span4{"data-toggle" => "dropdown", :href => "#"}
       %span#subjectName Subjects
       %span.caret
     %ul.dropdown-menu{:id => 'subjects'}
       - @subjects.each do |subject|
         %li.hidden{:semester => subject.semester_id}
           = link_to subject.name, {:action => 'get_videos', :subject => subject.id}, :remote => true 
-          -# %a{:href => "#"}= subject.name
-      / dropdown menu links
-/ Video Results
-.row
-  #videos-list.span3
+  #videos-list.row
     = render :partial => 'videos/video_thumb', :collection => @videos
+    = render :partial => 'videos/video_thumb', :collection => @videos
+    = render :partial => 'videos/video_thumb', :collection => @videos
+/ Video Results
