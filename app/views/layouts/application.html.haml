@@ -24,15 +24,31 @@
               %li
                 %a{:href => "#contact"} Contact
             %ul.nav.pull-right
-              %li
-                %a{:href => "/users/sign_up"} Sign up
-              %li.divider-vertical
-              %li.dropdown
-                %a.dropdown-toggle{:href => "#" , "data-toggle"=>"dropdown"}
-                  %span Sign in         
-                  %strong.caret
-                %div.dropdown-menu{"style"=>"padding: 15px; padding-bottom: 0px;"}
-                  = render 'users/sessions/new'
+              -unless user_signed_in?
+                %li
+                  %a{:href => "/users/sign_up"} Sign up
+                %li.divider-vertical
+                %li.dropdown
+                  %a.dropdown-toggle{:href => "#" , "data-toggle"=>"dropdown"}
+                    %span Sign in         
+                    %strong.caret
+                  %div.dropdown-menu{"style"=>"padding: 15px; padding-bottom: 0px;"}
+                    = render 'users/sessions/new'
+              -else
+                %li 
+                  %ul.nav
+                    %li.dropdown
+                      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        %b.icon-user
+                        =current_user.first_name
+                        %b.caret
+                      %ul.dropdown-menu
+                        %li
+                          %a
+                            %b.icon-folder-open
+                            =t('your_profile')
+                        %li    
+                          =link_to('Logout', destroy_user_session_path, :method => :delete)   
           / /.nav-collapse
     .container
       = yield
