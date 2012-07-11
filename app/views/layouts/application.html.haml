@@ -24,36 +24,15 @@
               %li
                 %a{:href => "#contact"} Contact
             %ul.nav.pull-right
-              -if user_signed_in?
-                %li
-                  %a{:href => "/users/sign_up"} Sign up
-                %li.divider-vertical
-                %li.dropdown
-                  %a.dropdown-toggle{:href => "#" , "data-toggle"=>"dropdown"}
-                    %span Sign in         
-                    %strong.caret
-                  %div.dropdown-menu{"style"=>"padding: 15px; padding-bottom: 0px;"}
-                    %form#user_new.user_new{"accept-charset" => "UTF-8", :action => "/users/sign_in", :method => "post"}
-                      %div{:style => ""}
-                        %input{:name => "utf8", :type => "hidden", :value => "✓"}
-                        %input{:name => "authenticity_token", :type => "hidden", :value => "wMiQEzVXLKqnEyoKrjEy+hyEvFi/S2wjKbmEcw9pqOg="}/
-                      %div
-                        %label{:for => "user_email"} Email
-                        %input#user_email{:name => "user[email]", :size => "30", :type => "email", :value => ""}
-                      %div
-                        %label{:for => "user_password"} Password
-                        %input#user_password{:name => "user[password]", :size => "30", :type => "password"}
-                      %div
-                        %input{:name => "user[remember_me]", :type => "hidden", :value => "0"}
-                        %input#user_remember_me{:name => "user[remember_me]", :type => "checkbox", :value => "1"}
-                        %label{:for => "user_remember_me"} Remember me
-                      %div
-                        %input{:name => "commit", :type => "submit", :value => "Sign in"}/
-                        %a{:href => "/users/auth/facebook"} Sign in with Facebook
-              -else
-                %li
-                  %span 
-                  = current_user.inspect
+              %li
+                %a{:href => "/users/sign_up"} Sign up
+              %li.divider-vertical
+              %li.dropdown
+                %a.dropdown-toggle{:href => "#" , "data-toggle"=>"dropdown"}
+                  %span Sign in         
+                  %strong.caret
+                %div.dropdown-menu{"style"=>"padding: 15px; padding-bottom: 0px;"}
+                  = render 'users/sessions/new'
           / /.nav-collapse
     .container
       = yield
