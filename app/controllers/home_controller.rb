@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :get_videos]
+  
   def index
     @levels = Level.all
     @subjects = Subject.all
