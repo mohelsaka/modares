@@ -12,6 +12,8 @@
  *= require bootstrap-datepicker
  */
 
+
+/*
 div.caption{
 	position: relative;
 	text-shadow: 0 1px 1px #999;
@@ -41,6 +43,16 @@ a.thumbnail.wrapper{
 	margin-top: 50px;
 	margin-left: 0px;
 }
+*/
 a.btn.dropdown-toggle.btn-large.btn-primary.span4{
 	color: white;
 }
+
+.video-row {
+	margin-top: 15px;
+}
+
+.duration {
+	float: right;
+}
+

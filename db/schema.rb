@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120710112634) do
+ActiveRecord::Schema.define(:version => 20120711134825) do
 
   create_table "admins", :force => true do |t|
     t.string   "email"
@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(:version => 20120710112634) do
     t.integer  "icon_file_size"
     t.datetime "icon_updated_at"
     t.string   "description"
+    t.integer  "duration",          :default => 0
   end
 
 end

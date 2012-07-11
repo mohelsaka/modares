@@ -38,6 +38,7 @@ $(document).ready(function() {
 		e.stopPropagation();
 	});
 
+	/*
 	$('.wrapper').hover(function() {
 		$(this).find('img').animate({
 			opacity : ".6"
@@ -55,6 +56,7 @@ $(document).ready(function() {
 		}, 100);
 		$(this).find('.caption').addClass('hidden');
 	});
+	*/
 	$("#videos-list").ajaxStart(function() {
 		$(this).html("<img class='offset5' id='ajax-start' src='http://www.w3schools.com/jquery/demo_wait.gif' />");
 	});
