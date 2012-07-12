@@ -9,14 +9,14 @@
   %dd= @semester.name
   %dt
     %strong
-      = model_class.human_attribute_name(:description)
-      \:
-  %dd= @semester.description
-  %dt
-    %strong
       = model_class.human_attribute_name(:level_id)
       \:
   %dd= @semester.level_id
+  %dt
+    %strong
+      = model_class.human_attribute_name(:description)
+      \:
+  %dd= @semester.description
 .form-actions
   = link_to t('.back', :default => t("helpers.links.back")),      |
     semesters_path(:level => @semester.level_id), :class => 'btn' |

@@ -4,9 +4,14 @@
     .controls
       = f.text_field :name, :class => 'text_field'
   .control-group
+    = f.label :position, :class => 'control-label'    
+    .controls
+      = f.text_field :position, :class => 'text_field'      
+  .control-group
     = f.label :description, :class => 'control-label'
     .controls
       = f.text_field :description, :class => 'text_field'
+    
   .form-actions
     = f.submit nil, :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), |

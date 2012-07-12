@@ -7,6 +7,7 @@
       %th= model_class.human_attribute_name(:id)
       %th= model_class.human_attribute_name(:name)
       %th= model_class.human_attribute_name(:description)
+      %th= model_class.human_attribute_name(:position)
       %th= model_class.human_attribute_name(:created_at)
       %th= t '.actions', :default => t("helpers.actions")
   %tbody
@@ -15,19 +16,20 @@
         %td= link_to level.id, level_path(level)
         %td= level.name
         %td= level.description
+        %td= level.position
         %td= l level.created_at
         %td
-          = link_to t('.edit', :default => t("helpers.links.edit")), |
-            edit_level_path(level), :class => 'btn btn-mini'         |
+          = link_to t('.edit', :default => t("helpers.links.edit")), 
+            edit_level_path(level), :class => 'btn btn-mini'         
           -#
-          = link_to t("List all semesters"),                             |
-            semesters_path(:level => level.id), :class => 'btn btn-mini' |
+          = link_to t("List all semesters"),                             
+            semesters_path(:level => level.id), :class => 'btn btn-mini' 
           -#
-          = link_to t('.destroy', :default => t("helpers.links.destroy")),                                  |
-            level_path(level),                                                                              |
-            :method => :delete,                                                                             |
-            :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')), |
-            :class => 'btn btn-mini btn-danger'                                                             |
-= link_to t('.new', :default => t("helpers.links.new")), |
-  new_level_path,                                        |
-  :class => 'btn btn-primary'                            |
+          = link_to t('.destroy', :default => t("helpers.links.destroy")),                                  
+            level_path(level),                                                                              
+            :method => :delete,                                                                             
+            :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')), 
+            :class => 'btn btn-mini btn-danger'                                                             
+= link_to t('.new', :default => t("helpers.links.new")), 
+  new_level_path,                                        
+  :class => 'btn btn-primary'                            
