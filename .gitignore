@@ -11,6 +11,7 @@
 /log/*.log
 /tmp
 /public/system
+/.project
 #Ignore setup mail file
 #/config/initializers/setup_mail.rb
 *.erb~
