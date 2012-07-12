@@ -13,8 +13,6 @@ Modares::Application.routes.draw do
   
   resources :users
   
-  # matching profiles/user_id e.g. profiles/4
-  match 'profiles/:id' => 'profiles#profile', :constraints => {:id => /\d/}
   
 
   # The priority is based upon order of creation:

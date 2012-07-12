@@ -44,7 +44,7 @@ a.thumbnail.wrapper{
 	margin-left: 0px;
 }
 */
-.btn{
+a.btn.dropdown-toggle.btn-large.btn-primary.span4{
 	color: white;
 }
 
@@ -56,18 +56,3 @@ a.thumbnail.wrapper{
 	float: right;
 }
 
-.about-me{
-	background-color: grey;
-	min-height: 129px;
-	color: white;
-	text-decoration: blink;
-	padding: 10px;
-}
-
-.tabbable ul.nav li{
-	float: right;
-}
-.profile-video-list{
-	min-height: 500px;
-	max-width: 790px;
-}
