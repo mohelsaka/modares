@@ -1,0 +1,32 @@
+- model_class = Subject.new.class
+.page-header
+  %h1= t '.title', :default => model_class.model_name.human.pluralize
+%table.table.table-striped
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:description)
+      %th= model_class.human_attribute_name(:semester_id)
+      %th= model_class.human_attribute_name(:created_at)
+      %th= t '.actions', :default => t("helpers.actions")
+  %tbody
+    - @subjects.each do |subject|
+      %tr
+        %td= link_to subject.id, subject_path(subject)
+        %td= subject.name
+        %td= subject.description
+        %td= subject.semester_id
+        %td= l subject.created_at
+        %td
+          = link_to t('.edit', :default => t("helpers.links.edit")), |
+            edit_subject_path(subject), :class => 'btn btn-mini'     |
+          -#
+          = link_to t('.destroy', :default => t("helpers.links.destroy")),                                  |
+            subject_path(subject),                                                                          |
+            :method => :delete,                                                                             |
+            :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')), |
+            :class => 'btn btn-mini btn-danger'                                                             |
+= link_to t('.new', :default => t("helpers.links.new")), |
+  new_subject_path(:semester => params[:semester]),      |
+  :class => 'btn btn-primary'                            |
