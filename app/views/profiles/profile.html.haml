@@ -3,7 +3,7 @@
 %hr
 %div.row
   .avatar.span3
-    = image_tag 'http://www.gravatar.com/avatar/1b5b64fdadd0d82da3cd3b9dafe7b6bb?s=128&d=identicon&r=PG'
+    = image_tag @user.avatar.url(:medium) 
     %div
       = t('reputions') + " : " + "0"
   .divider-vertical    

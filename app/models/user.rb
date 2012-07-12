@@ -4,14 +4,18 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable
+  
+  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" },
+                             :default_url => "Icon-user.png"
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid,
-  :first_name, :last_name, :birth_date
+  :first_name, :last_name, :birth_date, :avatar
 
   devise :omniauthable
   
   has_many :videos
+  
 
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first
