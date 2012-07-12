@@ -1,8 +1,7 @@
 .user-info-head
-  .btn-group.pull-right.edit-profile-group
-    %button.btn 1
-    %button.btn 2
-    %button.btn 3 
+  -if params[:id].to_i == current_user.id
+    .btn-group.pull-right.edit-profile-group
+      = link_to t('.edit'),'../users/edit',{:class =>"btn"}
   %h3
     = @user.name
 %hr
