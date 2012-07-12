@@ -1,5 +1,10 @@
-%h3
-  = @user.name
+.user-info-head
+  .btn-group.pull-right.edit-profile-group
+    %button.btn 1
+    %button.btn 2
+    %button.btn 3 
+  %h3
+    = @user.name
 %hr
 %div.row
   .avatar.span3
@@ -20,7 +25,7 @@
         %div 
           = t("member_since")  +" : " + time_ago_in_words(@user.created_at)
   .about-me.span5
-    About me
+    = @user.about_me
 %hr
 .tabbable.profile-video-list
   / Only required for left/right tabs

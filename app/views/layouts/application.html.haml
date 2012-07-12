@@ -44,11 +44,9 @@
                         %b.caret
                       %ul.dropdown-menu
                         %li
-                          %a
-                            %b.icon-folder-open
-                            =t('your_profile')
-                        %li    
-                          =link_to('Logout', destroy_user_session_path, :method => :delete)   
+                          =link_to(t('.your_profile'), '/profiles/'+current_user.id.to_s)
+                        %li
+                          =link_to(t('.log_out'), destroy_user_session_path, :method => :delete)   
           / /.nav-collapse
     .container
       = yield
