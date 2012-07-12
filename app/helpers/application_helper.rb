@@ -1,4 +1,6 @@
 module ApplicationHelper
+  
+  # these next four helper functions needed for devise views
   def resource_name
     :user
   end

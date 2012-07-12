@@ -28,3 +28,10 @@ a.btn.dropdown-toggle.btn-large.btn-primary.span4{
 #videos-list{
 	min-height: 500px;
 }
+
+.provider-Facebook{
+	background-image: url("http://cdn.mediafire.com/images/buttons/btn_facebook_connect.png");
+    background-repeat: no-repeat;
+    min-height: 18px;
+    width: 139px;
+}
