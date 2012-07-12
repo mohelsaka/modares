@@ -24,7 +24,7 @@
       = truncate(video_thumb.description, :length => 150)
     .reviews
       .icon-user
-      = video_thumb.user.first_name + " " + video_thumb.user.last_name
+      = link_to video_thumb.user.name , '/profiles/'+video_thumb.user.id.to_s
       .icon-eye-open.offset1
       = video_thumb.views
       .icon-time.offset1
