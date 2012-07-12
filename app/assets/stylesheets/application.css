@@ -25,3 +25,6 @@ a.btn.dropdown-toggle.btn-large.btn-primary.span4{
 	float: right;
 }
 
+#videos-list{
+	min-height: 500px;
+}
