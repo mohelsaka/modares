@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20120712144406) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "semesters", :force => true do |t|
@@ -33,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20120712144406) do
     t.integer  "level_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "subjects", :force => true do |t|

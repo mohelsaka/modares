@@ -41,8 +41,10 @@ class User < ActiveRecord::Base
   end
   
   def name
-    first_name + ' ' + last_name
+    n = [first_name,last_name].select{|x| !x.blank?}.join(" ")
+    n.blank? ? email : n
   end
+  
   def age
     now = Time.now.utc.to_date
     now.year - birth_date.year - (birth_date.to_date.change(:year => now.year) > now ? 1 : 0)

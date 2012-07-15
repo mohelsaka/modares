@@ -4,7 +4,6 @@
     %title= t("layout.project_name")
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
-    = javascript_include_tag :src => "http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"
     = csrf_meta_tags
   %body
     .navbar.navbar-fixed-top
@@ -44,7 +43,7 @@
                         %b.caret
                       %ul.dropdown-menu
                         %li
-                          =link_to(t('.your_profile'), '/profiles/'+current_user.id.to_s)
+                          =link_to(t('.your_profile'), profiles_url(current_user.id))
                         %li
                           =link_to(t('.log_out'), destroy_user_session_path, :method => :delete)   
           / /.nav-collapse

@@ -1,17 +1,3 @@
--# %a.thumbnail.wrapper.span2{"title" => video_thumb.title}
-  -# %h5.thumb-title
-    -# = truncate(video_thumb.title, :length => 20)
-  -# = image_tag video_thumb.icon.url(:medium), :height => 90, :width => 120
-  -# %p.reviews
-    -# %b.icon-eye-open
-    -# = video_thumb.views
-    -# %br
-    -# %b.icon-user
-    -# = video_thumb.user.first_name + " " + video_thumb.user.last_name
-  -# .caption.hidden
-    -# %p
-      -# = truncate(video_thumb.description, :length => 65)
-
 .row.video-row
   .span2
     = image_tag video_thumb.icon.url(:medium), :height => 110, :width => 170
@@ -24,7 +10,7 @@
       = truncate(video_thumb.description, :length => 150)
     .reviews
       .icon-user
-      = link_to video_thumb.user.name , '/profiles/'+video_thumb.user.id.to_s
+      = link_to video_thumb.user.name , profiles_url(video_thumb.user.id)
       .icon-eye-open.offset1
       = video_thumb.views
       .icon-time.offset1

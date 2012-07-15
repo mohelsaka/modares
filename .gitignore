@@ -11,6 +11,8 @@
 /log/*.log
 /tmp
 /public/system
+/doc
+/log/doc/README_FOR_APP
 #Ignore setup mail file
 #/config/initializers/setup_mail.rb
 *.erb~

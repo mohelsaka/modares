@@ -1,6 +1,5 @@
 class ProfilesController < ApplicationController
   def profile
-    @user = User.find_by_id(params[:id].to_i)
-
+    @user = User.find(params[:id])
   end
 end
