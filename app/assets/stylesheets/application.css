@@ -35,3 +35,13 @@ a.btn.dropdown-toggle.btn-large.btn-primary.span4{
     min-height: 18px;
     width: 139px;
 }
+#views-count{
+	display: inline;
+	padding: 6px;
+	font-size: large;
+	margin: 0px 4px;
+}
+#video-actions div{
+	display: inline-block;
+	
+}

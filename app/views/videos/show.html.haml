@@ -13,24 +13,28 @@
     %br
     %hr
     %video{:controls => "controls", :height => "400", :width => "870"}
-      %source{:src => @video.url , :type => "video/ogg"}/
-    #video-actions.row
-      .btn-group.pull-left
+      %source{:src => @video.url , :type => "video/ogg"}/  
+    #video-actions
+      .btn-group
         .btn.icon-thumbs-up
           Up
         .btn.icon-thumbs-down
           Down
-      %div.pull-right
-        #views-count.label.label-success
-          %b.icon-eye-open  
-            = @video.views
-            
-        .btn-group.pull-left
-          %a.btn.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-            = t('.share')
-            %span.caret
-          %ul.dropdown-menu
-            / dropdown menu links    
+      #views-count.label.label-success.pull-right
+        %b.icon-eye-open  
+          = @video.views
+      .btn-group.pull-right
+        %a.btn.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          = t('.share')
+          %span.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href=>"#"}
+              Facebook
+            %a{:href=>"#"}
+              Twitter
+            %a{:href=>"#"}
+              Google        
     #video-info.offset1
       %p
         = t('.made_by')
