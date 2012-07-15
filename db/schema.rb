@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120708110759) do
+ActiveRecord::Schema.define(:version => 20120712125246) do
 
   create_table "admins", :force => true do |t|
     t.string   "email"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20120708110759) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "semesters", :force => true do |t|
@@ -33,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20120708110759) do
     t.integer  "level_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "subjects", :force => true do |t|
@@ -61,9 +63,29 @@ ActiveRecord::Schema.define(:version => 20120708110759) do
     t.string   "first_name"
     t.string   "last_name"
     t.date     "birth_date"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "videos", :force => true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.integer  "views"
+    t.integer  "user_id"
+    t.integer  "subject_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "icon_file_name"
+    t.string   "icon_content_type"
+    t.integer  "icon_file_size"
+    t.datetime "icon_updated_at"
+    t.string   "description"
+    t.integer  "duration",          :default => 0
+  end
 
 end

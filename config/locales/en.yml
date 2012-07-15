@@ -3,3 +3,10 @@
 
 en:
   hello: "Hello world"
+  layout:
+    project_name: "Modares"
+    
+  users:
+    sessions:
+      new:
+        signin: "Signin"

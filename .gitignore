@@ -6,10 +6,12 @@
 
 # Ignore bundler config
 /.bundle
-
+/.rvmrc
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/public/system
+/.project
 #Ignore setup mail file
 #/config/initializers/setup_mail.rb
 *.erb~
@@ -17,3 +19,4 @@
 *.*~
 config/database.yml
 *.DS_Store 
+/nbproject/private/
