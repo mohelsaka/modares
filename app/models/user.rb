@@ -4,14 +4,18 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable
+  
+  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" },
+                             :default_url => "Icon-user.png"
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid,
-  :first_name, :last_name, :birth_date
+  :first_name, :last_name, :birth_date, :avatar
 
   devise :omniauthable
   
   has_many :videos
+  
 
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first
@@ -36,4 +40,13 @@ class User < ActiveRecord::Base
     end
   end
   
+  def name
+    n = [first_name,last_name].select{|x| !x.blank?}.join(" ")
+    n.blank? ? email : n
+  end
+  
+  def age
+    now = Time.now.utc.to_date
+    now.year - birth_date.year - (birth_date.to_date.change(:year => now.year) > now ? 1 : 0)
+  end
 end

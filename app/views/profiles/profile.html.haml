@@ -1,0 +1,41 @@
+.user-info-head
+  -if params[:id].to_i == current_user.id
+    .btn-group.pull-right.edit-profile-group
+      = link_to t('.edit'), edit_user_registration_path, {:class =>"btn"}
+  %h3
+    = @user.name
+%hr
+%div.row
+  .avatar.span3
+    = image_tag @user.avatar.url(:medium) 
+    %div
+      = t('reputions') + " : " + "0"
+  .divider-vertical    
+  .profile-info.span3
+    %div
+      %h3
+        =t('user_info')
+    %div
+      %div
+        %div
+          = t('user_name')+" : "+@user.name
+        %div
+          = t('age') +" : "+ @user.age.to_s
+        %div 
+          = t("member_since")  +" : " + time_ago_in_words(@user.created_at)
+  .about-me.span5
+    = @user.about_me
+%hr
+.tabbable.profile-video-list
+  / Only required for left/right tabs
+  %ul.nav.nav-tabs
+    %li.active
+      %a{"data-toggle" => "tab", :href => "#tab1"} Section 1
+    %li
+      %a{"data-toggle" => "tab", :href => "#tab2"} Section 2
+  .tab-content
+    #tab1.tab-pane.active
+      #videos
+        = render :partial => 'videos/video_thumb', :collection => @user.videos   
+    #tab2.tab-pane
+      %p Howdy, I'm in Section 2.

@@ -12,8 +12,7 @@
  *= require bootstrap-datepicker
  */
 
-
-a.btn.dropdown-toggle.btn-large.btn-primary.span4{
+.btn{
 	color: white;
 }
 
@@ -34,4 +33,25 @@ a.btn.dropdown-toggle.btn-large.btn-primary.span4{
     background-repeat: no-repeat;
     min-height: 18px;
     width: 139px;
+}
+
+.about-me{
+	background-color: gray;
+	min-height: 129px;
+	color: white;
+	text-decoration: blink;
+	padding: 10px;
+}
+
+.tabbable ul.nav li{
+	float: right;
+}
+
+.profile-video-list{
+	min-height: 500px;
+	max-width: 790px;
+}
+
+.edit-profile-group{
+	margin-right: 100px;
 }
