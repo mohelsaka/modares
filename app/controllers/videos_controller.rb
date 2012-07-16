@@ -84,6 +84,6 @@ class VideosController < ApplicationController
   
   def add_question
     @video = Video.find(params[:id])
-    @video.questions.create(:body => params[:question][:body], :user_id => current_user.id)
+    @question = @video.questions.create(:body => params[:question][:body], :user_id => current_user.id)
   end
 end

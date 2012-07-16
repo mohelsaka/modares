@@ -1,0 +1,10 @@
+%div
+  %div
+    = image_tag 'question_icon.jpg', :width => 50, :height => 50
+    %div.question-body{'data-toggle' => "collapse", 'data-target' => "#ans-#{question.id}"}
+      = question.body
+    .vote-actions
+      %a.btn.icon-thumbs-up
+      %a.btn.icon-thumbs-down
+  .answers.collapse{:id => "ans-#{question.id}"}
+    = render :partial => 'videos/answer', :collection => question.answers    

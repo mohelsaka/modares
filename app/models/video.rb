@@ -4,6 +4,5 @@ class Video < ActiveRecord::Base
   belongs_to :subject
   belongs_to :user
   
-  # destroy questions on destroying video
-  has_many :questions, :dependent => :destroy
+  has_many :questions
 end
