@@ -45,6 +45,7 @@
 	
 }
 
+/* Styling Question Area --BEGIN--*/
 .question-body{
 	border: 1px solid;
     border-radius: 5px 5px 5px 5px;
@@ -56,13 +57,12 @@
 }
 .vote-actions{
 	display: inline-table;
+	
+	a {
+		display: block;
+	}
 }
-.vote-up{
-	display: block;
-    margin-bottom: 15px;
-}
-
-/* end styling questions and answers area*/
+/* Styling Question Area --END--*/
 
 .about-me{
 	background-color: gray;
