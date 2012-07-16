@@ -53,11 +53,11 @@
           = image_tag 'question_icon.jpg', :width => 50, :height => 50
           = form_for @question, :url => add_question_url(:id => @video.id), :remote => true do |f|
             = f.text_area :body, {:rows => 3, :class => "question-body", "placeholder" => t('.question-placeholder')}
-            -# %textarea.question-body{"placeholder" => t('.question-placeholder'), 'name' => 'body'}
             = f.submit t('.post'), :class => 'btn btn-large post-btn'
       .span9
         #questions-area
           = render :partial => 'videos/question', :collection => @video.questions
+          
     %hr
   .span3.pull-left
     Side Bar

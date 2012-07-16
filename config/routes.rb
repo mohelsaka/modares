@@ -19,6 +19,8 @@ Modares::Application.routes.draw do
   # route for adding question on a video
   match 'videos/:id/add_question' => 'videos#add_question', :constraints => {:id => /\d+/}, :as => :add_question
 
+  # route for adding answer on a question of a video
+  match 'videos/:id/add_answer' => 'videos#add_answer', :constraints => {:id => /\d+/}, :as => :add_answer
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

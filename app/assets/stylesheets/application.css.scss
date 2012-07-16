@@ -69,9 +69,16 @@
 
 .answers{
   margin-top: 10px;
-  
+  margin-left: 55px;
+    form{
+      display :inline;
+      textarea{
+        margin-top: 5px;
+        height: 46px;
+        width: 643px;
+      }
+    }
   .answer{
-    margin-left: 55px;
     
     .question-body{
       cursor: auto;
@@ -102,3 +109,5 @@
 .edit-profile-group{
 	margin-right: 100px;
 }
+
+
