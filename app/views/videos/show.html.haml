@@ -35,7 +35,7 @@
               Twitter
             %a{:href=>"#"}
               Google        
-    #video-info.offset1
+    #video-info
       %p
         = t('.made_by')
         = (link_to @video.user.first_name, "profiles/" + @video.user_id.to_s)
@@ -47,6 +47,22 @@
       
       - if current_user && current_user.id == @video.user_id
         = link_to 'Edit', edit_video_path(@video)
+      %hr
+      .span9
+        .asking-area
+          = image_tag 'question_icon.jpg', :width => 50, :height => 50
+          %textarea.question-body{"placeholder" => t('.question-placeholder')}
+          .btn.btn-large.post-btn
+            = t('post')
+      .span9
+        .asking-area
+          = image_tag 'question_icon.jpg', :width => 50, :height => 50
+          %div.question-body
+            = "This is a sample on one Question and how it will appear in this page. Question will be here"
+          .vote-actions
+            %a.btn.icon-thumbs-up.vote-up
+            %br
+            %a.btn.icon-thumbs-down
     %hr
   .span3.pull-left
     Side Bar

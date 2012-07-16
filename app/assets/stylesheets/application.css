@@ -45,3 +45,22 @@ a.btn.dropdown-toggle.btn-large.btn-primary.span4{
 	display: inline-block;
 	
 }
+
+.question-body{
+	border: 1px solid;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    min-height: 50px;
+    padding: 5px;
+    width: 80%;
+    cursor: pointer;
+}
+.vote-actions{
+	display: inline-table;
+}
+.vote-up{
+	display: block;
+    margin-bottom: 15px;
+}
+
+/* end styling questions and answers area*/
