@@ -13,3 +13,4 @@ en:
   videos:
     show:
       question-placeholder: "Have a question? write it here and click on post button!"
+      post: "Post"

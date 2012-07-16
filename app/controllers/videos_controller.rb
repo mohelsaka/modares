@@ -14,6 +14,7 @@ class VideosController < ApplicationController
   # GET /videos/1.json
   def show
     @video = Video.find(params[:id])
+    @question = Question.new
 
     respond_to do |format|
       format.html # show.html.erb
@@ -79,5 +80,10 @@ class VideosController < ApplicationController
       format.html { redirect_to videos_url }
       format.json { head :ok }
     end
+  end
+  
+  def add_question
+    @video = Video.find(params[:id])
+    @video.questions.create(:body => params[:question][:body], :user_id => current_user.id)
   end
 end

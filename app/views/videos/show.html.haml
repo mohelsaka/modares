@@ -51,9 +51,10 @@
       .span9
         .asking-area
           = image_tag 'question_icon.jpg', :width => 50, :height => 50
-          %textarea.question-body{"placeholder" => t('.question-placeholder')}
-          .btn.btn-large.post-btn
-            = t('post')
+          = form_for @question, :url => add_question_url(:id => @video.id), :remote => true do |f|
+            = f.text_area :body, {:rows => 3, :class => "question-body", "placeholder" => t('.question-placeholder')}
+            -# %textarea.question-body{"placeholder" => t('.question-placeholder'), 'name' => 'body'}
+            = f.submit t('.post'), :class => 'btn btn-large post-btn'
       .span9
         .asking-area
           = image_tag 'question_icon.jpg', :width => 50, :height => 50

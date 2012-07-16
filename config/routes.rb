@@ -14,8 +14,10 @@ Modares::Application.routes.draw do
   resources :users
   
   # matching profiles/user_id e.g. profiles/4
-  match 'profiles/:id' => 'profiles#profile', :constraints => {:id => /\d/}, :as => :profiles
+  match 'profiles/:id' => 'profiles#profile', :constraints => {:id => /\d+/}, :as => :profiles
   
+  # route for adding question on a video
+  match 'videos/:id/add_question' => 'videos#add_question', :constraints => {:id => /\d+/}, :as => :add_question
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
