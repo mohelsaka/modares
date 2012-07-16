@@ -55,6 +55,7 @@
     width: 80%;
     cursor: pointer;
 }
+
 .vote-actions{
 	display: inline-table;
 	
@@ -62,6 +63,20 @@
 		display: block;
 	}
 }
+
+.answers{
+  margin-top: 10px;
+  
+  .answer{
+    margin-left: 55px;
+    
+    .question-body{
+      cursor: auto;
+      width: 79%;
+    }
+  }
+}
+
 /* Styling Question Area --END--*/
 
 .about-me{
