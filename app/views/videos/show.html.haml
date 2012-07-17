@@ -4,12 +4,8 @@
     %p
       %h3.pull-left
         = @video.title
-      %h2.pull-right
-        = @video.subject.name
-        = ' < '
-        = @video.subject.semester.name
-        = ' < '
-        = @video.subject.semester.level.name
+      %h2.pull-right 
+        = [@video.subject.name, @video.subject.semester.name, @video.subject.semester.level.name].join(' < ')
     %br
     %hr
     %video{:controls => "controls", :height => "400", :width => "870"}
@@ -38,9 +34,8 @@
     #video-info
       %p
         = t('.made_by')
-        = (link_to @video.user.first_name, "profiles/" + @video.user_id.to_s)
-        = t('.published')
-        = @video.created_at.to_date
+        = link_to @video.user.name, profiles_url(:id => @video.user_id)
+        = [t('.published_at'), @video.created_at.to_date].join(' ')
       
       %p
         = @video.description
