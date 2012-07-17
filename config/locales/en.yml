@@ -5,8 +5,20 @@ en:
   hello: "Hello world"
   layout:
     project_name: "Modares"
+  
     
   users:
     sessions:
       new:
         signin: "Signin"
+  videos:
+    show:
+      question-placeholder: "Have a question? write it here and click on post button!"
+      post: "Post"
+    question:
+      question-placeholder: "Have a question? write it here and click on post button!"
+      post: "Post"
+      
+  layouts:
+    application:
+      signin-required: "You have to sign in!"
