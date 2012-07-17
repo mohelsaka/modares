@@ -1,23 +1,68 @@
-%p#notice= notice
-%p
-  %b Title:
-  = @video.title
-%p
-  %b Url:
-  = @video.url
-%p
-  %b Views:
-  = @video.views
-%p
-  %b User:
-  = @video.user_id
-%p
-  %b Subject:
-  = @video.subject_id
-%p
-  %b Icon:
-  = image_tag @video.icon.url(:thumb)
-
-= link_to 'Edit', edit_video_path(@video)
-|
-\#{link_to 'Back', videos_path}
+.row.fluid
+  .span9
+    %p#notice= notice
+    %p
+      %h3.pull-left
+        = @video.title
+      %h2.pull-right
+        = @video.subject.name
+        = ' < '
+        = @video.subject.semester.name
+        = ' < '
+        = @video.subject.semester.level.name
+    %br
+    %hr
+    %video{:controls => "controls", :height => "400", :width => "870"}
+      %source{:src => @video.url , :type => "video/ogg"}/  
+    #video-actions
+      .btn-group
+        .btn.icon-thumbs-up
+          Up
+        .btn.icon-thumbs-down
+          Down
+      #views-count.label.label-success.pull-right
+        %b.icon-eye-open  
+          = @video.views
+      .btn-group.pull-right
+        %a.btn.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          = t('.share')
+          %span.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href=>"#"}
+              Facebook
+            %a{:href=>"#"}
+              Twitter
+            %a{:href=>"#"}
+              Google        
+    #video-info
+      %p
+        = t('.made_by')
+        = (link_to @video.user.first_name, "profiles/" + @video.user_id.to_s)
+        = t('.published')
+        = @video.created_at.to_date
+      
+      %p
+        = @video.description
+      
+      - if current_user && current_user.id == @video.user_id
+        = link_to 'Edit', edit_video_path(@video)
+      %hr
+      .span9
+        .asking-area
+          = image_tag 'question_icon.jpg', :width => 50, :height => 50
+          %textarea.question-body{"placeholder" => t('.question-placeholder')}
+          .btn.btn-large.post-btn
+            = t('post')
+      .span9
+        .asking-area
+          = image_tag 'question_icon.jpg', :width => 50, :height => 50
+          %div.question-body
+            = "This is a sample on one Question and how it will appear in this page. Question will be here"
+          .vote-actions
+            %a.btn.icon-thumbs-up.vote-up
+            %br
+            %a.btn.icon-thumbs-down
+    %hr
+  .span3.pull-left
+    Side Bar
