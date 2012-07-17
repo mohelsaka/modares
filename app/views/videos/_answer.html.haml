@@ -3,5 +3,7 @@
   .question-body
     = answer.body
   .vote-actions
-    %a.btn.icon-thumbs-up
-    %a.btn.icon-thumbs-down
+    = link_to "", vote_url(:id => answer.id, :type => 'like', :target => 'a'), :remote => true, :class => "btn icon-thumbs-up"
+    .label.label-info{:id => "a#{answer.id}-votes"} 
+      = answer.upvotes.size - answer.downvotes.size
+    = link_to "", vote_url(:id => answer.id, :type => 'bad', :target => 'a'), :remote => true, :class => "btn icon-thumbs-down"

@@ -12,10 +12,10 @@
       %source{:src => @video.url , :type => "video/ogg"}/  
     #video-actions
       .btn-group
-        .btn.icon-thumbs-up
-          Up
-        .btn.icon-thumbs-down
-          Down
+        = link_to "Up", vote_url(:id => @video.id, :type => 'like', :target => 'v'), :remote => true, :class => "btn icon-thumbs-up"
+        .label.label-info{:id => "v#{@video.id}-votes"}
+          = @video.upvotes.size - @video.downvotes.size
+        = link_to "Down", vote_url(:id => @video.id, :type => 'bad', :target => 'v'), :remote => true, :class => "btn icon-thumbs-down"
       #views-count.label.label-success.pull-right
         %b.icon-eye-open  
           = @video.views

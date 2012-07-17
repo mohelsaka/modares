@@ -4,8 +4,10 @@
     %div.question-body{'data-toggle' => "collapse", 'data-target' => "#ans-#{question.id}"}
       = question.body
     .vote-actions
-      %a.btn.icon-thumbs-up
-      %a.btn.icon-thumbs-down
+      = link_to "", vote_url(:id => question.id, :type => 'like', :target => 'q'), :remote => true, :class => "btn icon-thumbs-up"
+      .label.label-info{:id => "q#{question.id}-votes"} 
+        = question.upvotes.size - question.downvotes.size
+      = link_to "", vote_url(:id => question.id, :type => 'bad', :target => 'q'), :remote => true, :class => "btn icon-thumbs-down"
   .answers.collapse{:id => "ans-#{question.id}"}
     .answers-div
       = render :partial => 'videos/answer', :collection => question.answers

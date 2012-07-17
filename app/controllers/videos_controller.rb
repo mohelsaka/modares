@@ -1,5 +1,5 @@
 class VideosController < ApplicationController
-  before_filter :check_for_sign_in, :only => [:add_answer, :add_question]
+  before_filter :check_for_sign_in, :only => [:add_answer, :add_question, :vote]
   
   # GET /videos
   # GET /videos.json
@@ -95,4 +95,23 @@ class VideosController < ApplicationController
     @question = Question.find(params[:id])
     @answer = @question.answers.create(:body => params[:answer][:body], :user_id => current_user.id)
   end
+  
+  def vote
+    target = params[:target]
+    id = params[:id]
+    
+    object = if target == 'v'
+        Video.find id
+      elsif target == 'a'
+        Answer.find id
+      elsif target == 'q'
+        Question.find id
+      end
+     
+    object.vote :voter => current_user, :vote => params[:type]
+    total_votes = object.upvotes.size - object.downvotes.size
+     
+    render :js => "$('##{target + id}-votes').html(#{total_votes});" 
+  end
+  
 end
