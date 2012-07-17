@@ -11,6 +11,10 @@ gem "omniauth-facebook"
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-datepicker-rails'
 gem "paperclip", "~> 3.0"
+
+# adding voting gem
+gem 'acts_as_votable'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
