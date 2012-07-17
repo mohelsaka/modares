@@ -27,11 +27,13 @@
                 %li
                   %a{:href => "/users/sign_up"} Sign up
                 %li.divider-vertical
-                %li.dropdown
+                %li.dropdown{:id => 'login-popup'}
                   %a.dropdown-toggle{:href => "#" , "data-toggle"=>"dropdown"}
                     %span Sign in         
                     %strong.caret
                   %div.dropdown-menu{"style"=>"padding: 15px; padding-bottom: 0px;"}
+                    #signin-required.hide.alert.alert-error
+                      = t('.signin-required')
                     = render 'users/sessions/new'
               -else
                 %li 
