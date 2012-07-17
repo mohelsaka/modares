@@ -1,4 +1,6 @@
 class VideosController < ApplicationController
+  before_filter :check_for_sign_in, :only => [:add_answer, :add_question]
+  
   # GET /videos
   # GET /videos.json
   def index
@@ -14,7 +16,9 @@ class VideosController < ApplicationController
   # GET /videos/1.json
   def show
     @video = Video.find(params[:id])
-
+    @question = Question.new
+    @answer = Answer.new
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @video }
@@ -79,5 +83,19 @@ class VideosController < ApplicationController
       format.html { redirect_to videos_url }
       format.json { head :ok }
     end
+  end
+  
+  def add_question
+    @video = Video.find(params[:id])
+    @question = @video.questions.create(:body => params[:question][:body], :user_id => current_user.id)
+  end
+  
+  def add_answer
+    @question = Question.find(params[:id])
+    @answer = @question.answers.create(:body => params[:answer][:body], :user_id => current_user.id)
+  end
+  
+  def check_for_sign_in
+    render :js => "$('#login-popup').addClass('open'); $('#signin-required').removeClass('hide');" unless user_signed_in?
   end
 end

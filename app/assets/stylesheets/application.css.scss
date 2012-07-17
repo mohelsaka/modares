@@ -45,6 +45,7 @@
 	
 }
 
+/* Styling Question Area --BEGIN--*/
 .question-body{
 	border: 1px solid;
     border-radius: 5px 5px 5px 5px;
@@ -54,15 +55,39 @@
     width: 80%;
     cursor: pointer;
 }
-.vote-actions{
-	display: inline-table;
-}
-.vote-up{
-	display: block;
-    margin-bottom: 15px;
+.asking-area form{
+  display: inline;
 }
 
-/* end styling questions and answers area*/
+.vote-actions{
+	display: inline-table;
+	
+	a {
+		display: block;
+	}
+}
+
+.answers{
+  margin-top: 10px;
+  margin-left: 55px;
+    form{
+      display :inline;
+      textarea{
+        margin-top: 5px;
+        height: 46px;
+        width: 643px;
+      }
+    }
+  .answer{
+    
+    .question-body{
+      cursor: auto;
+      width: 79%;
+    }
+  }
+}
+
+/* Styling Question Area --END--*/
 
 .about-me{
 	background-color: gray;
@@ -84,3 +109,5 @@
 .edit-profile-group{
 	margin-right: 100px;
 }
+
+

@@ -51,18 +51,13 @@
       .span9
         .asking-area
           = image_tag 'question_icon.jpg', :width => 50, :height => 50
-          %textarea.question-body{"placeholder" => t('.question-placeholder')}
-          .btn.btn-large.post-btn
-            = t('post')
+          = form_for @question, :url => add_question_url(:id => @video.id), :remote => true do |f|
+            = f.text_area :body, {:rows => 3, :class => "question-body", "placeholder" => t('.question-placeholder')}
+            = f.submit t('.post'), :class => 'btn btn-large post-btn'
       .span9
-        .asking-area
-          = image_tag 'question_icon.jpg', :width => 50, :height => 50
-          %div.question-body
-            = "This is a sample on one Question and how it will appear in this page. Question will be here"
-          .vote-actions
-            %a.btn.icon-thumbs-up.vote-up
-            %br
-            %a.btn.icon-thumbs-down
+        #questions-area
+          = render :partial => 'videos/question', :collection => @video.questions
+          
     %hr
   .span3.pull-left
     Side Bar
