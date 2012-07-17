@@ -88,14 +88,11 @@ class VideosController < ApplicationController
   def add_question
     @video = Video.find(params[:id])
     @question = @video.questions.create(:body => params[:question][:body], :user_id => current_user.id)
+    @answer = Answer.new
   end
   
   def add_answer
     @question = Question.find(params[:id])
     @answer = @question.answers.create(:body => params[:answer][:body], :user_id => current_user.id)
-  end
-  
-  def check_for_sign_in
-    render :js => "$('#login-popup').addClass('open'); $('#signin-required').removeClass('hide');" unless user_signed_in?
   end
 end
