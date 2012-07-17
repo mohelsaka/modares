@@ -1,6 +1,6 @@
 .question{:id => "q-#{question.id}"}
   %div
-    = image_tag 'question_icon.jpg', :width => 50, :height => 50
+    = image_tag 'question_icon.jpg', :class => 'icon'
     %div.question-body{'data-toggle' => "collapse", 'data-target' => "#ans-#{question.id}"}
       = question.body
     .vote-actions
@@ -10,7 +10,7 @@
     .answers-div
       = render :partial => 'videos/answer', :collection => question.answers
     .asnwer-form-div
-      = image_tag 'answer_icon.png', :width => 50, :height => 50
+      = image_tag 'answer_icon.png', :class => 'icon'
       = form_for @answer, :url => add_answer_url(:id => question.id), :remote => true do |f|
         = f.text_area :body, {:rows => 3, :class => "answer-body", "placeholder" => t('.question-placeholder')}
         = f.submit t('.post'), :class => 'btn btn-large post-btn'
