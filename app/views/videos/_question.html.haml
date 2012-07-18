@@ -1,16 +1,22 @@
 .question{:id => "q-#{question.id}"}
-  %div
-    = image_tag 'question_icon.jpg', :class => 'icon'
-    %div.question-body{'data-toggle' => "collapse", 'data-target' => "#ans-#{question.id}"}
-      = question.body
+  .q-area
+    .pull-left
+      = image_tag 'question_icon.jpg', :class => 'icon'
+    .q-data
+      .q-info
+        = link_to question.user.name, :url => profiles_url(question.user.id)
+      .q-body{'data-toggle' => "collapse", 'data-target' => "#ans-#{question.id}"}
+        = question.body
     .vote-actions
       =render :partial =>'videos/voting_actions', :locals => { :target => 'q' , :object => question }
   .answers.collapse{:id => "ans-#{question.id}"}
     .answers-div
       = render :partial => 'videos/answer', :collection => question.answers
-    .asnwer-form-div
-      = image_tag 'answer_icon.png', :class => 'icon'
-      = form_for @answer, :url => add_answer_url(:id => question.id), :remote => true do |f|
-        = f.text_area :body, {:rows => 3, :class => "answer-body", "placeholder" => t('.question-placeholder')}
-        = f.submit t('.post'), :class => 'btn btn-large post-btn'
+    .answer-input
+      .pull-left
+        = image_tag 'answer_icon.png', :class => 'icon'
+      .pull-left
+        = form_for @answer, :url => add_answer_url(:id => question.id), :remote => true do |f|
+          = f.text_area :body, {:rows => 3, :class => "answer-body", "placeholder" => t('.question-placeholder')}
+          = f.submit t('.post'), :class => 'btn btn-large post-btn'
   %hr

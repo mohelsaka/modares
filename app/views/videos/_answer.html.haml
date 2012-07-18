@@ -1,6 +1,10 @@
 .answer
-  = image_tag 'answer_icon.png', :class => 'icon'  
-  .question-body
-    = answer.body
+  .pull-left
+    = image_tag 'answer_icon.png', :class => 'icon'  
+  .q-data
+    .q-info
+      = link_to answer.user.name, :url => profiles_url(answer.user.id)
+    .q-body
+      = answer.body
   .vote-actions
     =render :partial =>'videos/voting_actions', :locals => { :target => 'a' , :object => answer }
