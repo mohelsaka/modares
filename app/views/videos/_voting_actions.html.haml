@@ -1,0 +1,4 @@
+= link_to "", vote_url(:id => object.id, :type => 'like', :target => target), :remote => true, :class => "btn icon-thumbs-up"
+.label.label-info{:id => "#{target + object.id.to_s}-votes"} 
+  = object.upvotes.size - object.downvotes.size
+= link_to "", vote_url(:id => object.id, :type => 'bad', :target => target), :remote => true, :class => "btn icon-thumbs-down"
