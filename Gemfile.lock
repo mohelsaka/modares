@@ -24,6 +24,7 @@ GEM
       activesupport (= 3.1.1)
       arel (~> 2.2.1)
       tzinfo (~> 0.3.29)
+    activerecord-reputation-system (1.2.1)
     activeresource (3.1.1)
       activemodel (= 3.1.1)
       activesupport (= 3.1.1)
@@ -173,6 +174,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-reputation-system
   acts_as_votable
   bootstrap-datepicker-rails
   coffee-rails (~> 3.1.1)

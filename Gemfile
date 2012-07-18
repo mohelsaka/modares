@@ -15,6 +15,9 @@ gem "paperclip", "~> 3.0"
 # adding voting gem
 gem 'acts_as_votable'
 
+#adding reputition system
+gem 'activerecord-reputation-system', :require => 'reputation_system'
+ 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

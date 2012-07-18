@@ -20,6 +20,27 @@ class User < ActiveRecord::Base
 
   acts_as_voter
   
+  #-------------- 
+  has_reputation :points,
+      :source => [
+          { :reputation => :questioning_skill, :weight => 0.8 },
+          { :reputation => :answering_skill, :weight => 2 },
+          { :reputation => :teaching_skill, :weight => 3 }],
+      :aggregated_by => :sum
+
+  has_reputation :questioning_skill,
+      :source => { :reputation => :votes, :of => :questions },
+      :aggregated_by => :sum
+
+  has_reputation :answering_skill,
+      :source => { :reputation => :votes, :of => :answers },
+      :aggregated_by => :sum
+      
+  has_reputation :teaching_skill,
+      :source => { :reputation => :votes, :of => :videos },
+      :aggregated_by => :sum
+        
+      
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first
     unless user

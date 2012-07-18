@@ -107,9 +107,13 @@ class VideosController < ApplicationController
       elsif target == 'q'
         Question.find id
       end
+    
+    value = params[:type] == 'like' ? 1 : -1
+    object.add_or_update_evaluation(:votes, value, current_user)
      
-    object.vote :voter => current_user, :vote => params[:type]
-    total_votes = object.upvotes.size - object.downvotes.size
+    total_votes 
+    # object.vote :voter => current_user, :vote => params[:type]
+    # total_votes = object.upvotes.size - object.downvotes.size
     
     voteType = (current_user.voted_down_on?(object)) ? 'down' : 'up'
     voteTypeInverse = (current_user.voted_down_on?(object)) ? 'up' : 'down'
