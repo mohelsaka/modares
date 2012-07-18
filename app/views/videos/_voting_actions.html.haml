@@ -1,4 +1,6 @@
-= link_to "", vote_url(:id => object.id, :type => 'like', :target => target), :remote => true, :class => "btn icon-thumbs-up"
-.label.label-info{:id => "#{target + object.id.to_s}-votes"} 
+- clickClassUp = (user_signed_in? && current_user.voted_up_on?(object) ) ? 'vote-clicked' : ''
+- clickClassDown = (user_signed_in? && current_user.voted_down_on?(object) ) ? 'vote-clicked' : ''
+= link_to "", vote_url(:id => object.id, :type => 'like', :target => target), :remote => true, :class => "vote-up #{clickClassUp}" , :id => "#{target + object.id.to_s}-votes-up"
+.label.total-votes-label.label-info{:id => "#{target + object.id.to_s}-votes"} 
   = object.upvotes.size - object.downvotes.size
-= link_to "", vote_url(:id => object.id, :type => 'bad', :target => target), :remote => true, :class => "btn icon-thumbs-down"
+= link_to "", vote_url(:id => object.id, :type => 'bad', :target => target), :remote => true, :class => "vote-down #{clickClassDown}", :id => "#{target + object.id.to_s}-votes-down"

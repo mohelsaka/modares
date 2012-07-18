@@ -110,8 +110,11 @@ class VideosController < ApplicationController
      
     object.vote :voter => current_user, :vote => params[:type]
     total_votes = object.upvotes.size - object.downvotes.size
-     
-    render :js => "$('##{target + id}-votes').html(#{total_votes});" 
+    
+    voteType = (current_user.voted_down_on?(object)) ? 'down' : 'up'
+    voteTypeInverse = (current_user.voted_down_on?(object)) ? 'up' : 'down'
+    
+    render :js => "$('##{target + id}-votes').html(#{total_votes});$('##{target + id}-votes-#{voteType}').addClass('vote-clicked');$('##{target + id}-votes-#{voteTypeInverse}').removeClass('vote-clicked');" 
   end
   
 end

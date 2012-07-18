@@ -40,9 +40,15 @@
 	font-size: large;
 	margin: 0px 4px;
 }
-#video-actions div{
+#video-actions div,a{
+  margin-top: 2px;
 	display: inline-block;
-	
+}
+#video-actions div{
+  position: relative;
+  top: -4px;
+  font-size: x-large;
+  padding: 5px;
 }
 
 /* Styling Question Area --BEGIN--*/
@@ -112,6 +118,33 @@ img.icon{
 
 .edit-profile-group{
 	margin-right: 100px;
+}
+
+/*=================================== Voting actions ==============================*/
+@mixin vote-actions-icons($url, $urlClicked){
+  background-image: url($url);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 39px 40px;
+  height: 30px;
+  width: 28px;
+  &.vote-clicked, &:hover{
+    background-image: url($urlClicked);
+    background-color: #FFFFFF;
+  }
+}
+
+a.vote-up{
+  @include vote-actions-icons('/assets/up.png','/assets/up-clicked.png');
+}
+
+a.vote-down{
+  @include vote-actions-icons('/assets/down.png','/assets/down-clicked.png')
+}
+
+.total-votes-label{
+  text-align: center;
+  margin: 5px 0px;
 }
 
 
