@@ -108,17 +108,21 @@ class VideosController < ApplicationController
         Question.find id
       end
     
-    value = params[:type] == 'like' ? 1 : -1
-    object.add_or_update_evaluation(:votes, value, current_user)
-     
-    total_votes 
-    # object.vote :voter => current_user, :vote => params[:type]
-    # total_votes = object.upvotes.size - object.downvotes.size
-    
-    voteType = (current_user.voted_down_on?(object)) ? 'down' : 'up'
-    voteTypeInverse = (current_user.voted_down_on?(object)) ? 'up' : 'down'
-    
-    render :js => "$('##{target + id}-votes').html(#{total_votes});$('##{target + id}-votes-#{voteType}').addClass('vote-clicked');$('##{target + id}-votes-#{voteTypeInverse}').removeClass('vote-clicked');" 
+    if current_user.can_vote_for?(object)
+      value = params[:type] == 'like' ? 1 : -1
+      object.add_or_update_evaluation(:votes, value, current_user)
+       
+      total_votes = object.reputation_value_for(:votes) 
+      
+      # building the response script
+      voteType = (value == -1) ? 'down' : 'up'
+      voteTypeInverse = (value == -1) ? 'up' : 'down'
+      altering_vote_icon_1 = "$('##{target + id}-votes-#{voteType}').addClass('vote-clicked');"
+      altering_vote_icon_2 = "$('##{target + id}-votes-#{voteTypeInverse}').removeClass('vote-clicked');"
+      render :js => "$('##{target + id}-votes').html(#{total_votes});#{altering_vote_icon_1 + altering_vote_icon_2}" 
+    else
+      render :js => "alert('you can\\'t vote on your #{object.class.name}');"
+    end  
   end
   
 end

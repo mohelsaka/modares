@@ -6,9 +6,8 @@ class Answer < ActiveRecord::Base
 
   acts_as_votable
   
-  has_reputation :avg_rating,
+  has_reputation :votes,
       :source => :user,
-      :aggregated_by => :average,
-      :source_of => [{ :reputation => :answering_skill, :of => :author }]
+      :aggregated_by => :sum
       
 end
