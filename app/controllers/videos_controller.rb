@@ -108,7 +108,7 @@ class VideosController < ApplicationController
         Question.find id
       end
     
-    if current_user.can_vote_for?(object)
+    # if current_user.can_vote_for?(object)
       value = params[:type] == 'like' ? 1 : -1
       object.add_or_update_evaluation(:votes, value, current_user)
        
@@ -120,9 +120,9 @@ class VideosController < ApplicationController
       altering_vote_icon_1 = "$('##{target + id}-votes-#{voteType}').addClass('vote-clicked');"
       altering_vote_icon_2 = "$('##{target + id}-votes-#{voteTypeInverse}').removeClass('vote-clicked');"
       render :js => "$('##{target + id}-votes').html(#{total_votes});#{altering_vote_icon_1 + altering_vote_icon_2}" 
-    else
-      render :js => "alert('you can\\'t vote on your #{object.class.name}');"
-    end  
+    # else
+      # render :js => "alert('you can\\'t vote on your #{object.class.name}');"
+    # end  
   end
   
 end

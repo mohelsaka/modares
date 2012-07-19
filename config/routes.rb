@@ -25,6 +25,12 @@ Modares::Application.routes.draw do
   # voting up and down for videos
   match 'videos/:id/vote/:type/:target' => 'videos#vote', :constraints => {:id => /\d+/, :type => /like|bad/, :target=>/a|v|q/}, :as => :vote
   
+  # video link
+  match 'video/:id' => 'videos#show', :constraints => {:id => /\d+/}, :as => :video
+  
+  # Question Link
+  match 'question/:id' => 'videos#show_question', :constraints => {:id => /\d+/}, :as => :question
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

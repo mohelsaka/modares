@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120718160538) do
+ActiveRecord::Schema.define(:version => 20120719124336) do
 
   create_table "admins", :force => true do |t|
     t.string   "email"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20120718160538) do
     t.float    "value",           :default => 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "target_owner_id"
   end
 
   add_index "rs_evaluations", ["reputation_name", "source_id", "source_type", "target_id", "target_type"], :name => "index_rs_evaluations_on_reputation_name_and_source_and_target"

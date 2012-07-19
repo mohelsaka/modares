@@ -8,6 +8,7 @@ class Answer < ActiveRecord::Base
   
   has_reputation :votes,
       :source => :user,
-      :aggregated_by => :sum
+      :aggregated_by => :average,
+      :source_of => [{ :reputation => :answering_skill, :of => :author }]
       
 end
