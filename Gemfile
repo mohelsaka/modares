@@ -11,6 +11,7 @@ gem "omniauth-facebook"
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-datepicker-rails'
 gem "paperclip", "~> 3.0"
+gem "cancan"
 
 # adding voting gem
 gem 'acts_as_votable'

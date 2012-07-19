@@ -38,6 +38,7 @@ GEM
     bootstrap-datepicker-rails (0.6.15)
       railties (>= 3.0)
     builder (3.0.0)
+    cancan (1.6.8)
     cocaine (0.2.1)
     coffee-rails (3.1.1)
       coffee-script (>= 2.2.0)
@@ -177,6 +178,7 @@ DEPENDENCIES
   activerecord-reputation-system
   acts_as_votable
   bootstrap-datepicker-rails
+  cancan
   coffee-rails (~> 3.1.1)
   devise
   erb2haml

@@ -48,9 +48,14 @@ $(document).ready(function() {
 	$('.dropdown input, .dropdown label').click(function(e) {
 		e.stopPropagation();
 	});
-
 	// displaying loading flag on ajax request
 	$("#videos-list").ajaxStart(function() {
 		$(this).html("<img class='offset5' id='ajax-start' src='http://www.w3schools.com/jquery/demo_wait.gif' />");
 	});
 });
+
+function dispalyPop(id, msg){
+	$(id).attr("data-content",msg);
+	$(id).popover({trigger: 'manual'});
+	$(id).popover('show');
+}

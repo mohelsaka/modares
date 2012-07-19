@@ -1,5 +1,6 @@
 class VideosController < ApplicationController
   before_filter :check_for_sign_in, :only => [:add_answer, :add_question, :vote]
+  # check_authorization
   
   # GET /videos
   # GET /videos.json
@@ -86,14 +87,16 @@ class VideosController < ApplicationController
   end
   
   def add_question
-    @video = Video.find(params[:id])
-    @question = @video.questions.create(:body => params[:question][:body], :user_id => current_user.id)
+    @question = Question.new(:body => params[:question][:body], :user_id => current_user.id, :video_id => params[:id])
+    authorize! :create, @question, :message => t('.can_not_ask')
+    @question.save
     @answer = Answer.new
   end
   
   def add_answer
-    @question = Question.find(params[:id])
-    @answer = @question.answers.create(:body => params[:answer][:body], :user_id => current_user.id)
+    @answer = Answer.new(:body => params[:answer][:body], :user_id => current_user.id, :question_id => params[:id])
+    authorize! :create, @answer, :message => t('.can_not_answer')
+    @answer.save
   end
   
   def vote
@@ -107,6 +110,12 @@ class VideosController < ApplicationController
       elsif target == 'q'
         Question.find id
       end
+    
+    if params[:type] == 'like'
+      authorize! :vote_up, object.class, :message => t('.can_not_vote_up')
+    else
+      authorize! :vote_down, object.class, :message => t('.can_not_vote_down')
+    end
     
     if current_user.can_vote_for?(object)
       value = params[:type] == 'like' ? 1 : -1
