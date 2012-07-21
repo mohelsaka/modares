@@ -13,8 +13,13 @@ class Ability
       can :create, Answer
     end
     
-    # 5 points to vote up
-    if points >= 5
+    # user can't vote on his Videos, Answers and Questions
+    can :vote, [Answer, Question, Video] do |object|
+      user.persisted? && object.user_id != user.id
+    end
+    
+    # signed in useres only can vote up
+    if user.persisted?
       # can vote up
       can :vote_up, [Answer, Question, Video]
     end

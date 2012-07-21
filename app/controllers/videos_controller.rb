@@ -88,15 +88,22 @@ class VideosController < ApplicationController
   
   def add_question
     @question = Question.new(:body => params[:question][:body], :user_id => current_user.id, :video_id => params[:id])
+    
+    params[:error_place] = 'submit-question'
     authorize! :create, @question, :message => t('.can_not_ask')
-    @question.save
+    
+    display_error_popup(params[:error_place], (@question.errors.messages[:body].join('and'))) unless @question.save
     @answer = Answer.new
   end
   
   def add_answer
+    @question = Question.find params[:id]
     @answer = Answer.new(:body => params[:answer][:body], :user_id => current_user.id, :question_id => params[:id])
+    
+    params[:error_place] = "submit-ans-#{params[:id]}"
     authorize! :create, @answer, :message => t('.can_not_answer')
-    @answer.save
+    
+    display_error_popup(params[:error_place], (@answer.errors.messages[:body].join('and'))) unless @answer.save
   end
   
   def vote
@@ -111,27 +118,25 @@ class VideosController < ApplicationController
         Question.find id
       end
     
-    if params[:type] == 'like'
+    params[:error_place] = "#{params[:target] + params[:id]}-votes-#{params[:type]}"
+    
+    # check for not voting on his actions
+    authorize! :vote, object, :message => t('.can_not_vote')
+    
+    # chech for being able to vote up or down
+    if params[:type] == 'up'
       authorize! :vote_up, object.class, :message => t('.can_not_vote_up')
     else
       authorize! :vote_down, object.class, :message => t('.can_not_vote_down')
     end
     
-    if current_user.can_vote_for?(object)
-      value = params[:type] == 'like' ? 1 : -1
-      object.add_or_update_evaluation(:votes, value, current_user)
-       
-      total_votes = object.reputation_value_for(:votes) 
-      
-      # building the response script
-      voteType = (value == -1) ? 'down' : 'up'
-      voteTypeInverse = (value == -1) ? 'up' : 'down'
-      altering_vote_icon_1 = "$('##{target + id}-votes-#{voteType}').addClass('vote-clicked');"
-      altering_vote_icon_2 = "$('##{target + id}-votes-#{voteTypeInverse}').removeClass('vote-clicked');"
-      render :js => "$('##{target + id}-votes').html(#{total_votes});#{altering_vote_icon_1 + altering_vote_icon_2}" 
-    else
-      render :js => "alert('you can\\'t vote on your #{object.class.name}');"
-    end  
+    value = params[:type] == 'up' ? 1 : -1
+    object.add_or_update_evaluation(:votes, value, current_user)
+     
+    total_votes = object.reputation_value_for(:votes) 
+    
+    # building the response script
+    render :js => "$('##{target + id}-votes').html(#{total_votes});toggleVotes('#{target + id}', '#{params[:type]}');" 
   end
   
 end

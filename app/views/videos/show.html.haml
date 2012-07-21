@@ -50,7 +50,7 @@
           .pull-left
             = form_for @question, :url => add_question_url(:id => @video.id), :remote => true do |f|
               = f.text_area :body, {:rows => 3, :class => "question-body", "placeholder" => t('.question-placeholder')}
-              = f.submit t('.post'), :class => 'btn btn-large post-btn'
+              = f.submit t('.post'), :class => 'btn btn-large post-btn', :id => 'submit-question'
           
     %hr
   .span3.pull-left

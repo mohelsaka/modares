@@ -170,3 +170,26 @@ a.vote-down{
   }
 }
 
+
+/* Styling error message popup */
+#error-msg{
+  background-color: #00BB2E;
+  border-radius: 6px 6px 6px 6px;
+  color: #EDFFC9;
+  box-shadow: 6px 4px 7px #888883;
+  height: 60px;
+  padding: 7px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 1px;
+  width: 220px;
+  
+  a.close-error{
+    cursor: pointer;
+    float: right;
+  }
+  .content{
+    padding-top:10px;
+  }
+}
+

@@ -1,11 +1,11 @@
 class ApplicationController < ActionController::Base
+  include ActionView::Helpers::JavaScriptHelper
+  
   # before_filter :authenticate_user!
   protect_from_forgery
 
   rescue_from CanCan::AccessDenied do |exception|
-    voteType = params[:type] == 'like' ? 'up' : 'down'
-    render :js => "dispalyPop('##{params[:target] + params[:id]}-votes-#{voteType}', '#{exception.message}');"    
-    # render :js => "$('#error-msg').html('#{exception.message}').parent().removeClass('hidden');"
+    display_error_popup(params[:error_place], exception.message)
   end
   
 protected
@@ -13,4 +13,7 @@ protected
     render :js => "$('#login-popup').addClass('open'); $('#signin-required').removeClass('hide');" unless user_signed_in?
   end
   
+  def display_error_popup(id, message)
+    render :js => "dispalyPop('##{id}', '#{escape_javascript message}');"
+  end
 end

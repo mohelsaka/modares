@@ -53,9 +53,11 @@
                           =link_to(t('.log_out'), destroy_user_session_path, :method => :delete)   
           / /.nav-collapse
     .container
-      %a#error-pop.btn.btn-danger{"data-content" => "And here's some amazing content. It's very engaging. right?", "data-original-title" => "A Title", :href => "#", :rel => "popover"} 
-        hover for popover
       = yield
+    #error-msg.hidden
+      %a.close-error{:onClick => "$(this).parent().addClass('hidden');"}
+        ×
+      .content
     %footer
       %hr/
       %p

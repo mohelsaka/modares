@@ -18,5 +18,5 @@
       .pull-left
         = form_for @answer, :url => add_answer_url(:id => question.id), :remote => true do |f|
           = f.text_area :body, {:rows => 3, :class => "answer-body", "placeholder" => t('.question-placeholder')}
-          = f.submit t('.post'), :class => 'btn btn-large post-btn'
+          = f.submit t('.post'), :class => 'btn btn-large post-btn', :id => "submit-ans-#{question.id}"
   %hr
