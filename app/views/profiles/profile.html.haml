@@ -8,8 +8,8 @@
 %div.row
   .avatar.span3
     = image_tag @user.avatar.url(:medium) 
-    %div
-      = t('reputions') + " : " + "0"
+    .label.label-success.span1
+      = @user.reputation_value_for(:points).to_s
   .divider-vertical    
   .profile-info.span3
     %div
@@ -30,12 +30,25 @@
   / Only required for left/right tabs
   %ul.nav.nav-tabs
     %li.active
-      %a{"data-toggle" => "tab", :href => "#tab1"} Section 1
+      %a{"data-toggle" => "tab", :href => "#tab1"} 
+        =t('.user_videos')
     %li
-      %a{"data-toggle" => "tab", :href => "#tab2"} Section 2
+      %a{"data-toggle" => "tab", :href => "#tab2"} 
+        =t('.user_questions')
+    %li
+      %a{"data-toggle" => "tab", :href => "#tab3"} 
+        =t('.user_answers')
+    %li
+      %a{"data-toggle" => "tab", :href => "#tab4"} 
+        =t('.user_reputation_history')        
   .tab-content
     #tab1.tab-pane.active
       #videos
         = render :partial => 'videos/video_thumb', :collection => @user.videos   
     #tab2.tab-pane
-      %p Howdy, I'm in Section 2.
+      = render :partial => 'profiles/question_in_tabs', :collection => @user.questions
+    #tab3.tab-pane
+      .answers
+        = render :partial => 'profiles/answer_in_tabs', :collection => @user.answers
+    #tab4.tab-pane
+      = render :partial => 'profiles/reputation', :collection => @reputations    
