@@ -25,9 +25,9 @@ class User < ActiveRecord::Base
   #-------------- 
   has_reputation :points,
       :source => [
-          { :reputation => :questioning_skill, :weight => 1 },
-          { :reputation => :answering_skill, :weight => 2 },
-          { :reputation => :teaching_skill, :weight => 3 }],
+          { :reputation => :votes, :of => :questions, :weight => 1 },
+          { :reputation => :votes, :of => :answers, :weight => 2 },
+          { :reputation => :votes, :of => :videos, :weight => 3 }],
       :aggregated_by => :sum
 
   has_reputation :questioning_skill,
@@ -79,10 +79,10 @@ class User < ActiveRecord::Base
   # returns the vote value for object which was voted by this user
   # or nil if he hasn't voted for this object before
   def vote_for(object)
-    RSEvaluation.where(:target_type => object.class,
+    RSEvaluation.where(:target_type => object.class.name,
                         :target_id => object.id,
                         :source_id => self.id,
-                        :source_type => self.class).first.try(:value)
+                        :source_type => self.class.name).first.try(:value)
   end
   
   def can_vote_for?(object)

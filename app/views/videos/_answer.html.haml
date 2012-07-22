@@ -3,7 +3,7 @@
     = image_tag 'answer_icon.png', :class => 'icon'  
   .q-data
     .q-info
-      = link_to answer.user.name, :url => profiles_url(answer.user.id)
+      = link_to answer.user.name, profiles_url(answer.user.id)
     .q-body
       = answer.body
   .vote-actions

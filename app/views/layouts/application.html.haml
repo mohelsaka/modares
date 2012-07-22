@@ -54,6 +54,10 @@
           / /.nav-collapse
     .container
       = yield
+    #error-msg.hidden
+      %a.close-error{:onClick => "$(this).parent().addClass('hidden');"}
+        ×
+      .content
     %footer
       %hr/
       %p

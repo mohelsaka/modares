@@ -23,7 +23,7 @@ Modares::Application.routes.draw do
   match 'videos/:id/add_answer' => 'videos#add_answer', :constraints => {:id => /\d+/}, :as => :add_answer
 
   # voting up and down for videos
-  match 'videos/:id/vote/:type/:target' => 'videos#vote', :constraints => {:id => /\d+/, :type => /like|bad/, :target=>/a|v|q/}, :as => :vote
+  match 'videos/:id/vote/:type/:target' => 'videos#vote', :constraints => {:id => /\d+/, :type => /up|down/, :target=>/a|v|q/}, :as => :vote
   
   # video link
   match 'video/:id' => 'videos#show', :constraints => {:id => /\d+/}, :as => :video
