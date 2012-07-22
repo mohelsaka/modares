@@ -3,6 +3,7 @@
 
 en:
   hello: "Hello world"
+  home: "Home"
   layout:
     project_name: "Modares"
   
