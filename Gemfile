@@ -11,6 +11,11 @@ gem "omniauth-facebook"
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-datepicker-rails'
 gem "paperclip", "~> 3.0"
+gem "cancan"
+
+#adding reputition system
+gem 'activerecord-reputation-system', :require => 'reputation_system'
+ 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
