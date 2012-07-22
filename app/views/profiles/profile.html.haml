@@ -8,8 +8,8 @@
 %div.row
   .avatar.span3
     = image_tag @user.avatar.url(:medium) 
-    %div
-      = t('reputions') + " : " + "0"
+    .label.label-success.span1
+      = @user.reputation_value_for(:points).to_s
   .divider-vertical    
   .profile-info.span3
     %div
