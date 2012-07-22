@@ -20,8 +20,6 @@ class User < ActiveRecord::Base
 
   has_many :answers
   
-  acts_as_voter
-  
   #-------------- 
   has_reputation :points,
       :source => [
