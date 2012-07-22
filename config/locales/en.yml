@@ -3,9 +3,15 @@
 
 en:
   hello: "Hello world"
+  home: "Home"
   layout:
     project_name: "Modares"
-  
+  have_to_sign_in: "You have to sign  in!"
+  can_not_ask: "You have to sign in to add question!"
+  can_not_answer: "You have to get at least 10 points to add answer!"
+  can_not_vote_up: "You have to get at lease 5 points to vote up"
+  can_not_vote_down: "You have to get at lease 25 points to vote down"
+  can_not_vote: "You can not vote on you acctivities!"
     
   users:
     sessions:
@@ -24,3 +30,9 @@ en:
   layouts:
     application:
       signin-required: "You have to sign in!"
+  home:
+    profile:
+      user_videos: "User Videos"
+      user_questions: "User Questions"
+      user_answers: "User Answers"
+      user_reputation_history: "User Histroy"   
