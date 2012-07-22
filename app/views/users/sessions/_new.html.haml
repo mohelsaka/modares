@@ -12,3 +12,4 @@
       = f.label :remember_me
   %div= f.submit t(".signin")
 = render "users/shared/links"
+- session[:return_to] = request.fullpath
