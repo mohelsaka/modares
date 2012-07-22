@@ -29,3 +29,9 @@ en:
   layouts:
     application:
       signin-required: "You have to sign in!"
+  home:
+    profile:
+      user_videos: "User Videos"
+      user_questions: "User Questions"
+      user_answers: "User Answers"
+      user_reputation_history: "User Histroy"   

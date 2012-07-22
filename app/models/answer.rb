@@ -4,8 +4,6 @@ class Answer < ActiveRecord::Base
   
   validates :body, :presence => true
 
-  acts_as_votable
-  
   has_reputation :votes,
       :source => :user,
       :aggregated_by => :sum

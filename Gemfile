@@ -13,9 +13,6 @@ gem 'bootstrap-datepicker-rails'
 gem "paperclip", "~> 3.0"
 gem "cancan"
 
-# adding voting gem
-gem 'acts_as_votable'
-
 #adding reputition system
 gem 'activerecord-reputation-system', :require => 'reputation_system'
  
