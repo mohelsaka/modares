@@ -12,10 +12,7 @@
       %source{:src => @video.url , :type => "video/ogg"}/  
     #video-actions
       .btn-group
-        .btn.icon-thumbs-up
-          Up
-        .btn.icon-thumbs-down
-          Down
+        =render :partial =>'videos/voting_actions', :locals => { :target => 'v' , :object => @video }
       #views-count.label.label-success.pull-right
         %b.icon-eye-open  
           = @video.views
@@ -44,14 +41,16 @@
         = link_to 'Edit', edit_video_path(@video)
       %hr
       .span9
-        .asking-area
-          = image_tag 'question_icon.jpg', :class => 'icon'
-          = form_for @question, :url => add_question_url(:id => @video.id), :remote => true do |f|
-            = f.text_area :body, {:rows => 3, :class => "question-body", "placeholder" => t('.question-placeholder')}
-            = f.submit t('.post'), :class => 'btn btn-large post-btn'
-      .span9
         #questions-area
           = render :partial => 'videos/question', :collection => @video.questions
+      .span9
+        .asking-area
+          .pull-left
+            = image_tag 'question_icon.jpg', :class => 'icon'
+          .pull-left
+            = form_for @question, :url => add_question_url(:id => @video.id), :remote => true do |f|
+              = f.text_area :body, {:rows => 3, :class => "question-body", "placeholder" => t('.question-placeholder')}
+              = f.submit t('.post'), :class => 'btn btn-large post-btn', :id => 'submit-question'
           
     %hr
   .span3.pull-left
