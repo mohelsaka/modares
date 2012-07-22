@@ -1,0 +1,13 @@
+.answer
+  %h2
+    = link_to answer_in_tabs.question.video.title , video_url(answer_in_tabs.question.video.id) 
+  .pull-left
+    = image_tag 'answer_icon.png', :class => 'icon'  
+  .q-data
+    .q-info
+      = link_to answer_in_tabs.user.name, :url => profiles_url(answer_in_tabs.user.id)
+    .q-body
+      = answer_in_tabs.body
+  .vote-actions
+    =render :partial =>'videos/voting_actions', :locals => { :target => 'a' , :object => answer_in_tabs }
+%hr

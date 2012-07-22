@@ -48,9 +48,40 @@ $(document).ready(function() {
 	$('.dropdown input, .dropdown label').click(function(e) {
 		e.stopPropagation();
 	});
-
 	// displaying loading flag on ajax request
 	$("#videos-list").ajaxStart(function() {
 		$(this).html("<img class='offset5' id='ajax-start' src='http://www.w3schools.com/jquery/demo_wait.gif' />");
 	});
 });
+
+// this function displays a pop-up error message beside an element specified by the id
+function dispalyPop(id, msg){
+	// geting the position of the element
+	var x = $(id);
+	var pos = x.offset();
+	pos.left += (x.width() + 20 );
+	
+	// set the message content
+	var e = $('#error-msg .content');
+	e.html(msg);
+	
+	// set message position and display it
+	$('#error-msg').css({
+        top: pos.top + "px",
+        left: pos.left  + "px"
+    }).removeClass('hidden');
+}
+
+// this function to toggle vote buttons
+function toggleVotes(targetId, currentVote){
+	var currentVoteInv = (currentVote == 'down') ? 'up' : 'down';
+	
+	// ids mus be in for 'target id-votes-(down|up)' e.g. v50-votes-up
+	// targetId parameter contains the target concatenated with the id e.g. v50 .
+	// Builing the id
+	var id = '#'+targetId + '-votes-';
+	
+	// toggling the two buttons
+	$(id+currentVote).addClass('vote-clicked');
+	$(id+currentVoteInv).removeClass('vote-clicked');
+}

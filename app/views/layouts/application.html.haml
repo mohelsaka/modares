@@ -42,9 +42,12 @@
                   %ul.nav
                     %li.dropdown
                       %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                        %b.icon-user
-                        =current_user.first_name
-                        %b.caret
+                        .login-div
+                          .icon-user
+                            = current_user.name
+                          .label.label-info
+                            = current_user.reputation_value_for :points
+                          %b.caret
                       %ul.dropdown-menu
                         %li
                           =link_to(t('.your_profile'), profiles_url(current_user.id))
@@ -53,6 +56,10 @@
           / /.nav-collapse
     .container
       = yield
+    #error-msg.hidden
+      %a.close-error{:onClick => "$(this).parent().addClass('hidden');"}
+        ×
+      .content
     %footer
       %hr/
       %p

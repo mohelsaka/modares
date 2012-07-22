@@ -54,55 +54,75 @@
 	font-size: large;
 	margin: 0px 4px;
 }
-#video-actions div{
+#video-actions div,a{
+  margin-top: 2px;
 	display: inline-block;
-	
+}
+#video-actions div{
+  vertical-align: text-bottom;
+  font-size: x-large;
+  padding: 5px;
 }
 
 /* Styling Question Area --BEGIN--*/
-.question-body{
+.q-body{
 	border: 1px solid;
-    border-radius: 5px 5px 5px 5px;
-    display: inline-block;
-    min-height: 50px;
-    padding: 5px;
-    width: 80%;
-    cursor: pointer;
+  border-radius: 5px 5px 5px 5px;
+  display: inline-block;
+  min-height: 80px;
+  width: 100%;
+  cursor: pointer;
+}
+.q-info{
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  margin-right: 10px;
 }
 .asking-area form{
   display: inline;
 }
+.q-data {
+  width: 80%;
+  float: left;
+}
+.q-area {
+  overflow: auto;
+}
 
 .vote-actions{
 	display: inline-table;
-	
+	margin-left: 20px;
 	a {
 		display: block;
 	}
 }
 
-.answers{
+.answers-div{
   margin-top: 10px;
   margin-left: 55px;
-    form{
-      display :inline;
-      textarea{
-        margin-top: 5px;
-        height: 46px;
-        width: 643px;
-      }
-    }
   .answer{
-    
-    .question-body{
-      cursor: auto;
-      width: 79%;
-    }
+    margin-top: 23px;
   }
 }
+
+.answer-input{
+  margin-left: 55px;
+  margin-top: 32px;
+  display: inline-block;
+}
+
 img.icon{
   width: 50px;
   height: 50px;
+}
+
+.question-icon{
+  float: left;  
+}
+
+body textarea{
+  width: 100%;
 }
 
 /* Styling Question Area --END--*/
@@ -128,4 +148,62 @@ img.icon{
 	margin-right: 100px;
 }
 
+/*=================================== Voting actions ==============================*/
+@mixin vote-actions-icons($url, $urlClicked){
+  background-image: url($url);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 39px 40px;
+  height: 30px;
+  width: 28px;
+  &.vote-clicked, &:hover{
+    background-image: url($urlClicked);
+    background-color: #FFFFFF;
+  }
+}
+
+a.vote-up{
+  @include vote-actions-icons('/assets/up.png','/assets/up-clicked.png');
+}
+
+a.vote-down{
+  @include vote-actions-icons('/assets/down.png','/assets/down-clicked.png')
+}
+
+.total-votes-label{
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.login-div {
+  .icon-user{
+    width: auto;
+  }
+  .label.label-info{
+    display: inline-block;
+  }
+}
+
+
+/* Styling error message popup */
+#error-msg{
+  background-color: #00BB2E;
+  border-radius: 6px 6px 6px 6px;
+  color: #EDFFC9;
+  box-shadow: 6px 4px 7px #888883;
+  height: 60px;
+  padding: 7px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 1px;
+  width: 220px;
+  
+  a.close-error{
+    cursor: pointer;
+    float: right;
+  }
+  .content{
+    padding-top:10px;
+  }
+}
 
