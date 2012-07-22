@@ -89,36 +89,32 @@ class VideosController < ApplicationController
   def add_question
     @question = Question.new(:body => params[:question][:body], :user_id => current_user.id, :video_id => params[:id])
     
-    params[:error_place] = 'submit-question'
-    authorize! :create, @question, :message => t('.can_not_ask')
+    @error_place = 'submit-question'
     
-    display_error_popup(params[:error_place], (@question.errors.messages[:body].join('and'))) unless @question.save
+    authorize! :create, @question, :message => t('.can_not_ask')
     @answer = Answer.new
+    
+    save_or_show_error(@question)
   end
   
   def add_answer
     @question = Question.find params[:id]
     @answer = Answer.new(:body => params[:answer][:body], :user_id => current_user.id, :question_id => params[:id])
     
-    params[:error_place] = "submit-ans-#{params[:id]}"
+    @error_place = "submit-ans-#{params[:id]}"
     authorize! :create, @answer, :message => t('.can_not_answer')
     
-    display_error_popup(params[:error_place], (@answer.errors.messages[:body].join('and'))) unless @answer.save
+    save_or_show_error(@answer)
   end
   
   def vote
     target = params[:target]
     id = params[:id]
     
-    object = if target == 'v'
-        Video.find id
-      elsif target == 'a'
-        Answer.find id
-      elsif target == 'q'
-        Question.find id
-      end
+    target_map = {'v' => Video, 'a' => Answer, 'q' => Question}
+    object = target_map[target].find id
     
-    params[:error_place] = "#{params[:target] + params[:id]}-votes-#{params[:type]}"
+    @error_place = "#{params[:target] + params[:id]}-votes-#{params[:type]}"
     
     # check for not voting on his actions
     authorize! :vote, object, :message => t('.can_not_vote')
@@ -139,4 +135,8 @@ class VideosController < ApplicationController
     render :js => "$('##{target + id}-votes').html(#{total_votes});toggleVotes('#{target + id}', '#{params[:type]}');" 
   end
   
+protected
+  def save_or_show_error(object)
+    display_error_popup(@error_place, (object.errors.messages[:body].join('and'))) unless object.save
+  end
 end

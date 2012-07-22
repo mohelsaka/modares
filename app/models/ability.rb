@@ -2,33 +2,28 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-    user ||= User.new
-    
-    # 0 points to add a qeustion
-    can :create, Question if user.persisted?
-    
-    points = user.reputation_value_for :points
-    # 10 points to add answer
-    if points >= 10
-      can :create, Answer
-    end
-    
-    # user can't vote on his Videos, Answers and Questions
-    can :vote, [Answer, Question, Video] do |object|
-      user.persisted? && object.user_id != user.id
-    end
-    
-    # signed in useres only can vote up
-    if user.persisted?
+    unless user.nil?
+      # 0 points to add a qeustion
+      can :create, Question
+      
+      points = user.reputation_value_for :points
+      # 10 points to add answer
+      can :create, Answer if points >= 10
+      
+      # user can't vote on his Videos, Answers and Questions
+      can :vote, [Answer, Question, Video] do |object|
+        object.user_id != user.id
+      end
+      
+      # 0 points to vote up
       # can vote up
       can :vote_up, [Answer, Question, Video]
+      
+      # 25 points to vote down
+      # can vote down
+      can :vote_down, [Answer, Question, Video] if points >= 25
     end
     
-    # 25 points to vote down
-    if points >= 25
-      # can vote down
-      can :vote_down, [Answer, Question, Video]
-    end
     
     # Define abilities for the passed in user here. For example:
     #

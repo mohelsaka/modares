@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   rescue_from CanCan::AccessDenied do |exception|
-    display_error_popup(params[:error_place], exception.message)
+    display_error_popup(@error_place, exception.message)
   end
   
 protected
