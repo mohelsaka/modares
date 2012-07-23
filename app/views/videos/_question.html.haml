@@ -9,8 +9,8 @@
         = question.body
     .vote-actions
       =render :partial =>'videos/voting_actions', :locals => { :target => 'q' , :object => question }
-  .video_answers.collapse{:id => "ans-#{question.id}"}
-    .video_answers-div
+  .video-answers.collapse{:id => "ans-#{question.id}"}
+    .video-answers-div
       = render :partial => 'videos/answer', :collection => question.video_answers
     .answer-input
       .pull-left
