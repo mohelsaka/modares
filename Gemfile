@@ -12,6 +12,7 @@ gem 'twitter-bootstrap-rails'
 gem 'bootstrap-datepicker-rails'
 gem "paperclip", "~> 3.0"
 gem "cancan"
+gem "surveyor"
 
 #adding reputition system
 gem 'activerecord-reputation-system', :require => 'reputation_system'
