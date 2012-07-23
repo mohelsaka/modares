@@ -16,24 +16,24 @@ class User < ActiveRecord::Base
   
   has_many :videos
   
-  has_many :questions
+  has_many :video_questions
 
-  has_many :answers
+  has_many :video_answers
   
   #-------------- 
   has_reputation :points,
       :source => [
-          { :reputation => :votes, :of => :questions, :weight => 1 },
-          { :reputation => :votes, :of => :answers, :weight => 2 },
+          { :reputation => :votes, :of => :video_questions, :weight => 1 },
+          { :reputation => :votes, :of => :video_answers, :weight => 2 },
           { :reputation => :votes, :of => :videos, :weight => 3 }],
       :aggregated_by => :sum
 
   has_reputation :questioning_skill,
-      :source => { :reputation => :votes, :of => :questions },
+      :source => { :reputation => :votes, :of => :video_questions },
       :aggregated_by => :sum
 
   has_reputation :answering_skill,
-      :source => { :reputation => :votes, :of => :answers },
+      :source => { :reputation => :votes, :of => :video_answers },
       :aggregated_by => :sum
       
   has_reputation :teaching_skill,

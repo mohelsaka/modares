@@ -1,7 +1,7 @@
-class Question < ActiveRecord::Base
+class VideoQuestion < ActiveRecord::Base
   belongs_to :video
   belongs_to :user
-  has_many :answers
+  has_many :video_answers
   
   validates :body, :presence => true
 
