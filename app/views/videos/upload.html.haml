@@ -1,0 +1,7 @@
+= form_tag @upload_info[:url], :multipart => true do
+  = hidden_field_tag :token, @upload_info[:token]
+  = text_field
+  = label_tag :file
+  = file_field_tag :file
+  %br
+  = submit_tag "Upload video"

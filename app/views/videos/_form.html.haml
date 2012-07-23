@@ -1,3 +1,4 @@
+=upload_video_url
 = form_for(@video) do |f|
   - if @video.errors.any?
     #error_explanation
@@ -14,15 +15,11 @@
   .field
     = f.label :url
     %br/
-    = f.text_field :url
+    = f.text_field :url, :value => @id
   .field
     = f.label :views
     %br/
     = f.number_field :views
-  .field
-    = f.label :user_id
-    %br/
-    = f.number_field :user_id
   .field
     = f.label :description
     %br/
@@ -30,9 +27,10 @@
   .field
     = f.label :subject_id
     %br/
-    = f.number_field :subject_id
+    = select("video", "subject_id", Subject.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'})
+    
   .field
     = f.file_field :icon
-    %br/
+    %br/  
   .actions
     = f.submit

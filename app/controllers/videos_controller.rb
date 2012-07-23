@@ -1,5 +1,7 @@
 class VideosController < ApplicationController
   before_filter :check_for_sign_in, :only => [:add_answer, :add_question, :vote]
+  before_filter :authenticate_user!, :only => [:new]
+  require 'youtube_it'
   # check_authorization
   
   # GET /videos
@@ -30,13 +32,20 @@ class VideosController < ApplicationController
   # GET /videos/new.json
   def new
     @video = Video.new
-
+    @id = params[:id]
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @video }
     end
   end
-
+  
+  def upload
+    
+    videoParams = {:title => "untitled",:description => "no description",:category => "Education",:keywords => ["Egypt"]}
+    client = YouTubeIt::Client.new(:username => "el.modars", :password =>  "badritbadrit", :dev_key => "AI39si4h6XwXU6zlKnxqu_9-MYOAtGuuXZ2k5UjMFbxWViwuc1s_476v25nRjrlGvO1ullFSMmpUX6AaQwKmGft4ZXUnYFfhHA")    
+    @upload_info = client.upload_token(videoParams, 'http://localhost:3000/videos/new?video_id=123')
+  end
+  
   # GET /videos/1/edit
   def edit
     @video = Video.find(params[:id])
@@ -46,7 +55,10 @@ class VideosController < ApplicationController
   # POST /videos.json
   def create
     @video = Video.new(params[:video])
-
+    client = YouTubeIt::Client.new(:username => "el.modars", :password =>  "badritbadrit", :dev_key => "AI39si4h6XwXU6zlKnxqu_9-MYOAtGuuXZ2k5UjMFbxWViwuc1s_476v25nRjrlGvO1ullFSMmpUX6AaQwKmGft4ZXUnYFfhHA")
+    client.video_update(params[:video][:url], :title => params[:video][:title],:description => params[:video][:description], :category => 'People',:keywords => %w[cool blah test])
+    @video.user_id = current_user.id
+    @video.views = 0 
     respond_to do |format|
       if @video.save
         format.html { redirect_to @video, notice: 'Video was successfully created.' }

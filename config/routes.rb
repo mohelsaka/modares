@@ -1,4 +1,8 @@
 Modares::Application.routes.draw do
+  
+  # link to upload video
+  match 'videos/upload' => 'videos#upload', :as => :upload_video
+  
   resources :videos
 
   devise_for :admins

@@ -19,7 +19,7 @@
             %ul.nav
               %li.active
                 %a{:href => root_url} 
-                  = t('home')
+                  = t('.home')
               %li
                 %a{:href => "#about"} About
               %li
@@ -51,6 +51,10 @@
                       %ul.dropdown-menu
                         %li
                           =link_to(t('.your_profile'), profiles_url(current_user.id))
+                        %li
+                          =link_to(t('.add_video'), profiles_url(current_user.id))
+                        %li
+                          %hr    
                         %li
                           =link_to(t('.log_out'), destroy_user_session_path, :method => :delete)   
           / /.nav-collapse
