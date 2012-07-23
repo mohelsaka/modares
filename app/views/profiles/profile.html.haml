@@ -34,10 +34,10 @@
         =t('.user_videos')
     %li
       %a{"data-toggle" => "tab", :href => "#tab2"} 
-        =t('.user_questions')
+        =t('.user_video_questions')
     %li
       %a{"data-toggle" => "tab", :href => "#tab3"} 
-        =t('.user_answers')
+        =t('.user_video_answers')
     %li
       %a{"data-toggle" => "tab", :href => "#tab4"} 
         =t('.user_reputation_history')        
@@ -46,9 +46,9 @@
       #videos
         = render :partial => 'videos/video_thumb', :collection => @user.videos   
     #tab2.tab-pane
-      = render :partial => 'profiles/question_in_tabs', :collection => @user.questions
+      = render :partial => 'profiles/question_in_tabs', :collection => @user.video_questions
     #tab3.tab-pane
-      .answers
-        = render :partial => 'profiles/answer_in_tabs', :collection => @user.answers
+      .video_answers
+        = render :partial => 'profiles/answer_in_tabs', :collection => @user.video_answers
     #tab4.tab-pane
       = render :partial => 'profiles/reputation', :collection => @reputations    

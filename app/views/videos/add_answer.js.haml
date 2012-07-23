@@ -1,3 +1,3 @@
 $('.answer-body').val('');
-$('#ans-#{@question.id} .answers-div').append("#{escape_javascript (render :partial => 'videos/answer', :object => @answer)}")
-$('#ans-#{@question.id} .answers-div .answer:last').hide().fadeIn();
+$('#ans-#{@question.id} .video-answers-div').append("#{escape_javascript (render :partial => 'videos/answer', :object => @answer)}")
+$('#ans-#{@question.id} .video-answers-div .answer:last').hide().fadeIn();

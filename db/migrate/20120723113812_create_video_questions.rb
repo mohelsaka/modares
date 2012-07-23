@@ -1,6 +1,6 @@
-class CreateQuestions < ActiveRecord::Migration
+class CreateVideoQuestions < ActiveRecord::Migration
   def change
-    create_table :questions do |t|
+    create_table :video_questions do |t|
       t.string :body
       t.integer :video_id
       t.integer :user_id
