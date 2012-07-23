@@ -33,6 +33,6 @@ en:
   home:
     profile:
       user_videos: "User Videos"
-      user_questions: "User Questions"
-      user_answers: "User Answers"
+      user_video_questions: "User Questions"
+      user_video_answers: "User VideoAnswers"
       user_reputation_history: "User Histroy"   

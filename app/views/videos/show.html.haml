@@ -41,8 +41,8 @@
         = link_to 'Edit', edit_video_path(@video)
       %hr
       .span9
-        #questions-area
-          = render :partial => 'videos/question', :collection => @video.questions
+        #video_questions-area
+          = render :partial => 'videos/question', :collection => @video.video_questions
       .span9
         .asking-area
           .pull-left

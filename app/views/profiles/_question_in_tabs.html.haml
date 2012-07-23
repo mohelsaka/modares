@@ -13,7 +13,7 @@
         = question_in_tabs.body
     .vote-actions
       =render :partial =>'videos/voting_actions', :locals => { :target => 'q' , :object => question_in_tabs }
-  .answers.collapse{:id => "ans-#{question_in_tabs.id}"}
-    .answers-div
-      = render :partial => 'videos/answer', :collection => question_in_tabs.answers
+  .video_answers.collapse{:id => "ans-#{question_in_tabs.id}"}
+    .video_answers-div
+      = render :partial => 'videos/answer', :collection => question_in_tabs.video_answers
 %hr  

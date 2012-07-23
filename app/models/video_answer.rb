@@ -1,4 +1,4 @@
-class Answer < ActiveRecord::Base
+class VideoAnswer < ActiveRecord::Base
   belongs_to :question
   belongs_to :user
   

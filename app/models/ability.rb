@@ -4,24 +4,24 @@ class Ability
   def initialize(user)
     unless user.nil?
       # 0 points to add a qeustion
-      can :create, Question
+      can :create, VideoQuestion
       
       points = user.reputation_value_for :points
       # 10 points to add answer
-      can :create, Answer if points >= 10
+      can :create, VideoAnswer if points >= 10
       
-      # user can't vote on his Videos, Answers and Questions
-      can :vote, [Answer, Question, Video] do |object|
+      # user can't vote on his Videos, VideoAnswers and VideoQuestions
+      can :vote, [VideoAnswer, VideoQuestion, Video] do |object|
         object.user_id != user.id
       end
       
       # 0 points to vote up
       # can vote up
-      can :vote_up, [Answer, Question, Video]
+      can :vote_up, [VideoAnswer, VideoQuestion, Video]
       
       # 25 points to vote down
       # can vote down
-      can :vote_down, [Answer, Question, Video] if points >= 25
+      can :vote_down, [VideoAnswer, VideoQuestion, Video] if points >= 25
     end
     
     

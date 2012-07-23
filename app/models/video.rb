@@ -4,7 +4,7 @@ class Video < ActiveRecord::Base
   belongs_to :subject
   belongs_to :user
   
-  has_many :questions
+  has_many :video_questions
   
    has_reputation :votes,
       :source => :user,

@@ -17,8 +17,8 @@ class VideosController < ApplicationController
   # GET /videos/1.json
   def show
     @video = Video.find(params[:id])
-    @question = Question.new
-    @answer = Answer.new
+    @question = VideoQuestion.new
+    @answer = VideoAnswer.new
     
     respond_to do |format|
       format.html # show.html.erb
@@ -87,19 +87,19 @@ class VideosController < ApplicationController
   end
   
   def add_question
-    @question = Question.new(:body => params[:question][:body], :user_id => current_user.id, :video_id => params[:id])
+    @question = VideoQuestion.new(:body => params[:video_question][:body], :user_id => current_user.id, :video_id => params[:id])
     
     @error_place = 'submit-question'
     
     authorize! :create, @question, :message => t('.can_not_ask')
-    @answer = Answer.new
+    @answer = VideoAnswer.new
     
     save_or_show_error(@question)
   end
   
   def add_answer
-    @question = Question.find params[:id]
-    @answer = Answer.new(:body => params[:answer][:body], :user_id => current_user.id, :question_id => params[:id])
+    @question = VideoQuestion.find params[:id]
+    @answer = VideoAnswer.new(:body => params[:video_answer][:body], :user_id => current_user.id, :video_question_id => params[:id])
     
     @error_place = "submit-ans-#{params[:id]}"
     authorize! :create, @answer, :message => t('.can_not_answer')
@@ -111,7 +111,7 @@ class VideosController < ApplicationController
     target = params[:target]
     id = params[:id]
     
-    target_map = {'v' => Video, 'a' => Answer, 'q' => Question}
+    target_map = {'v' => Video, 'a' => VideoAnswer, 'q' => VideoQuestion}
     object = target_map[target].find id
     
     @error_place = "#{params[:target] + params[:id]}-votes-#{params[:type]}"
