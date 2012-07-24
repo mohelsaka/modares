@@ -1,7 +1,18 @@
-= form_tag @upload_info[:url], :multipart => true do
-  = hidden_field_tag :token, @upload_info[:token]
-  = text_field
+= form_for :token, :url => video_token_url ,:remote => true do |f|
+  = f.label :title
+  = f.text_field :title
+  = f.label :description
+  = f.text_field :description
+  = f.label :subject
+  = select("video", "subject_id", Subject.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'})
+  = f.label :category
+  = f.text_field :category
+  = f.label :keywords
+  = f.text_field :keywords
+  = f.submit "Submit"
+  
+= form_tag '@upload_info[:url]', :multipart => true, :id => 'uploadform' do
+  = hidden_field_tag :token, '@upload_info[:token]'
   = label_tag :file
   = file_field_tag :file
-  %br
-  = submit_tag "Upload video"
+  %br  

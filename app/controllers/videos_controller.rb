@@ -1,6 +1,7 @@
 class VideosController < ApplicationController
   before_filter :check_for_sign_in, :only => [:add_answer, :add_question, :vote]
   before_filter :authenticate_user!, :only => [:new]
+  before_filter :createYoutubeClient
   require 'youtube_it'
   # check_authorization
   
@@ -41,9 +42,31 @@ class VideosController < ApplicationController
   
   def upload
     
-    videoParams = {:title => "untitled",:description => "no description",:category => "Education",:keywords => ["Egypt"]}
-    client = YouTubeIt::Client.new(:username => "el.modars", :password =>  "badritbadrit", :dev_key => "AI39si4h6XwXU6zlKnxqu_9-MYOAtGuuXZ2k5UjMFbxWViwuc1s_476v25nRjrlGvO1ullFSMmpUX6AaQwKmGft4ZXUnYFfhHA")    
-    @upload_info = client.upload_token(videoParams, 'http://localhost:3000/videos/new?video_id=123')
+    # videoParams = {:title => "untitled",:description => "no description",:category => "Education",:keywords => ["Egypt"]}
+#         
+    # @upload_info = @client.upload_token(videoParams, 'http://localhost:3000/videos/new?video_id=123')
+  end
+  
+  def make_new_video
+    v = Video.find params[:video_id]
+    v.url = params[:id]
+    v.save
+    redirect_to videos_url
+  end
+    
+  def gettoken
+    v = Video.new
+    v.title = params[:token][:title]
+    v.description = params[:token][:description]
+    v.subject_id = params[:video][:subject_id]
+    v.save
+    videoParams = {:title => params[:token][:title], :description => params[:token][:description], :category => 'Education', :keywords => ["Egypt"]}
+    upload_info = @client.upload_token(videoParams, "http://localhost:3000/videos/make_new_video?video_id=#{v.id}")
+    render :js => "uploadAjax('#{upload_info[:token]}','#{upload_info[:url]}')"
+  end
+  
+  def createYoutubeClient
+    @client = YouTubeIt::Client.new(:username => "el.modars", :password =>  "badritbadrit", :dev_key => "AI39si4h6XwXU6zlKnxqu_9-MYOAtGuuXZ2k5UjMFbxWViwuc1s_476v25nRjrlGvO1ullFSMmpUX6AaQwKmGft4ZXUnYFfhHA")
   end
   
   # GET /videos/1/edit
@@ -63,7 +86,7 @@ class VideosController < ApplicationController
       if @video.save
         format.html { redirect_to @video, notice: 'Video was successfully created.' }
         format.json { render json: @video, status: :created, location: @video }
-      else
+      elsecd
         format.html { render action: "new" }
         format.json { render json: @video.errors, status: :unprocessable_entity }
       end

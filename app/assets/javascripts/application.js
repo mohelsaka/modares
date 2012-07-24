@@ -85,3 +85,10 @@ function toggleVotes(targetId, currentVote){
 	$(id+currentVote).addClass('vote-clicked');
 	$(id+currentVoteInv).removeClass('vote-clicked');
 }
+
+//this function is used in uploadAjax
+function uploadAjax(token, url){
+	$('#token').attr('value',token);
+	$('#uploadform').attr('action',url);
+	$('#uploadform').submit();
+} 
