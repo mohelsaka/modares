@@ -1,6 +1,6 @@
 class VideosController < ApplicationController
   before_filter :check_for_sign_in, :only => [:add_answer, :add_question, :vote]
-  before_filter :authenticate_user!, :only => [:new]
+  before_filter :authenticate_user!, :only => [:new, :upload, :make_new_video, :gettoken]
   before_filter :createYoutubeClient
   require 'youtube_it'
   # check_authorization
@@ -50,6 +50,7 @@ class VideosController < ApplicationController
   def make_new_video
     v = Video.find params[:video_id]
     v.url = params[:id]
+    v.user_id = current_user.id
     v.save
     redirect_to videos_url
   end

@@ -1,5 +1,5 @@
 .video-row{:onclick => "location.href='#{video_path(video_thumb.id)}';"}
-  = image_tag video_thumb.icon.url(:medium)
+  = image_tag video_thumb.image
   .span6
     %h5.thumb-title
       = truncate(video_thumb.title, :length => 100)

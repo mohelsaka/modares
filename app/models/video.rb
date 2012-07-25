@@ -9,4 +9,8 @@ class Video < ActiveRecord::Base
    has_reputation :votes,
       :source => :user,
       :aggregated_by => :sum
+  
+  def image
+    "http://i.ytimg.com/vi/#{url}/mqdefault.jpg"
+  end    
 end

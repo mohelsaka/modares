@@ -52,6 +52,10 @@ $(document).ready(function() {
 	$("#videos-list").ajaxStart(function() {
 		$(this).html("<img class='offset5' id='ajax-start' src='http://www.w3schools.com/jquery/demo_wait.gif' />");
 	});
+	$("#upload_submit").click(function(){
+		$(this).attr('disabled','disabled');
+		$("#submit-image").removeClass('hidden');
+	});
 });
 
 // this function displays a pop-up error message beside an element specified by the id

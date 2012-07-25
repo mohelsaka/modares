@@ -9,10 +9,16 @@
   = f.text_field :category
   = f.label :keywords
   = f.text_field :keywords
-  = f.submit "Submit"
+  #submit-div
+    #submit-button
+      = f.submit "Submit" , :id => "upload_submit"
+    #submit-image.pull-left.hidden
+      = image_tag 'ajax-loader.gif', :class => ''  
   
 = form_tag '@upload_info[:url]', :multipart => true, :id => 'uploadform' do
   = hidden_field_tag :token, '@upload_info[:token]'
   = label_tag :file
   = file_field_tag :file
   %br  
+  %br
+  %br
