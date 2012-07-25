@@ -4,7 +4,7 @@
   = f.label :description
   = f.text_field :description
   = f.label :subject
-  = select("video", "subject_id", Subject.all.collect {|p| [ p.name, p.id ] }, {:include_blank => 'None'})
+  = select("video", "subject_id", Subject.all.collect {|p| [ [p.semester.level.name,p.semester.name,p.name].join(" < "), p.id ] })
   = f.label :category
   = f.text_field :category
   = f.label :keywords

@@ -13,4 +13,8 @@ class Video < ActiveRecord::Base
   def image
     "http://i.ytimg.com/vi/#{url}/mqdefault.jpg"
   end    
+  def video_views
+    (User::CLIENT).my_video(url).view_count
+    # url
+  end
 end

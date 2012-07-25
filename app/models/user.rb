@@ -40,6 +40,8 @@ class User < ActiveRecord::Base
       :source => { :reputation => :votes, :of => :videos },
       :aggregated_by => :sum
         
+  # youtube_client
+  CLIENT = YouTubeIt::Client.new(:username => "el.modars", :password =>  "badritbadrit", :dev_key => "AI39si4h6XwXU6zlKnxqu_9-MYOAtGuuXZ2k5UjMFbxWViwuc1s_476v25nRjrlGvO1ullFSMmpUX6AaQwKmGft4ZXUnYFfhHA")
       
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first

@@ -14,7 +14,7 @@
         =render :partial =>'videos/voting_actions', :locals => { :target => 'v' , :object => @video }
       #views-count.label.label-success.pull-right
         %b.icon-eye-open  
-          = @video.views
+          = @video.video_views
       .btn-group.pull-right
         %a.btn.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
           = t('.share')
