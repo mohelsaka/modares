@@ -1,6 +1,6 @@
-= form_for :token, :url => video_token_url ,:remote => true do |f|
+= form_for :token, :url => video_token_url, :remote => true, :id => "data_form"  do |f|
   = f.label :title
-  = f.text_field :title
+  = f.text_field :title, :required =>""
   = f.label :description
   = f.text_field :description
   = f.label :subject
@@ -18,7 +18,7 @@
 = form_tag '@upload_info[:url]', :multipart => true, :id => 'uploadform' do
   = hidden_field_tag :token, '@upload_info[:token]'
   = label_tag :file
-  = file_field_tag :file
+  = file_field_tag :file, :required =>""
   %br  
   %br
   %br

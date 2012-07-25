@@ -14,4 +14,4 @@
       .icon-eye-open.offset1
       = video_thumb.video_views
       .icon-time.offset1
-      = Time.at(video_thumb.duration).utc.strftime("%H:%M:%S")
+      = Time.at((video_thumb.video_duration)).utc.strftime("%H:%M:%S") 

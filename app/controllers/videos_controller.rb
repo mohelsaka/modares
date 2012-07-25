@@ -50,13 +50,13 @@ class VideosController < ApplicationController
   def make_new_video
     v = Video.find params[:video_id]
     v.url = params[:id]
-    v.user_id = current_user.id
     v.save
     redirect_to videos_url
   end
     
   def gettoken
     v = Video.new
+    v.user_id = current_user.id
     v.title = params[:token][:title]
     v.description = params[:token][:description]
     v.subject_id = params[:video][:subject_id]
