@@ -1,17 +1,17 @@
-.video-row{:onclick => "location.href='#{video_path(video_thumb.id)}';"}
+.video-row
   = image_tag video_thumb.image
   .span6
-    %h5.thumb-title
-      = truncate(video_thumb.title, :length => 100)
-      .duration
-        = video_thumb.created_at.to_date
+    %a{"href" => video_path(video_thumb.id)}
+      %h5.thumb-title
+        = truncate(video_thumb.title, :length => 100)
+    .duration
+      = video_thumb.created_at.to_date
     %p
       = truncate(video_thumb.description, :length => 150)
     .reviews
       .icon-user
       = link_to video_thumb.user.name , profiles_url(video_thumb.user.id)
       .icon-eye-open.offset1
-      = video_thumb.views
+      = video_thumb.video_views
       .icon-time.offset1
       = Time.at(video_thumb.duration).utc.strftime("%H:%M:%S")
-      

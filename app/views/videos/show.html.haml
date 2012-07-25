@@ -21,11 +21,11 @@
           %span.caret
         %ul.dropdown-menu
           %li
-            %a{:href=>"#"}
+            %a{:href=>"https://www.facebook.com/sharer/sharer.php?u=#{request.url}"}
               Facebook
-            %a{:href=>"#"}
+            %a{:href=>"https://twitter.com/intent/tweet?original_referer=#{request.url}"}
               Twitter
-            %a{:href=>"#"}
+            %a{:href=>"https://plus.google.com/share?url=#{request.url}"}
               Google        
     #video-info
       %p
