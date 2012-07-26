@@ -1,0 +1,23 @@
+= nested_form_for @section do |f|
+  = f.label :title, t('.title')
+  = f.text_field :title
+
+  = f.label :description, t('.description')
+  = f.text_area :description, :rows => 5, :cols => 50
+  
+  = f.fields_for :questions do |question_form|
+    %hr
+    = question_form.label 'type'
+    = question_form.select 'type', Question::QUESTION_TYPES,{}, {:onChange => "updateFields(this);"}
+    = question_form.label 'text'
+    = question_form.text_area :text, :rows => 5, :cols => 50
+    
+    = question_form.fields_for :answers do |answer_form|
+      = answer_form.text_field :text
+      = answer_form.link_to_remove "Remove this answer"
+    %p= question_form.link_to_add "Add Answer", :answers
+    
+    = question_form.link_to_remove "Remove this question"
+    
+  %p= f.link_to_add "Add a question", :questions
+  = f.submit 'Submit'

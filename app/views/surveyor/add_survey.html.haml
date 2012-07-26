@@ -1,0 +1,14 @@
+.homework-info
+  #homework-info
+    = form_for @survey, :url => homework_create_url do |f|
+      %p
+        = f.label :title, t('.title')
+        = f.text_field :title
+      %p 
+        = f.label :description, t('.description')
+        = f.text_area :description, :rows => 5, :cols => 50
+      = f.submit t('.next')
+  #homework-questions
+  %hr
+  #homework-qeustion-form
+    = render :partial => 'question_form', :object => Answer.new
