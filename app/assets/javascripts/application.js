@@ -52,14 +52,11 @@ $(document).ready(function() {
 	$("#videos-list").ajaxStart(function() {
 		$(this).html("<img class='offset5' id='ajax-start' src='http://www.w3schools.com/jquery/demo_wait.gif' />");
 	});
-	$("form").ajaxStart(function(){
+	$("#data_form").ajaxStart(function(){
 		$("#upload_submit").attr('disabled','disabled');
 		$("#submit-image").removeClass('hidden');
 	});
-	$("form").ajaxComplete(function(){
-		$("#upload_submit").removeAttr('disabled');
-		$("#submit-image").addClass('hidden');
-	});
+	
 	
 	
 	

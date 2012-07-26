@@ -61,7 +61,7 @@ class VideosController < ApplicationController
     v.description = params[:token][:description]
     v.subject_id = params[:video][:subject_id]
     v.save
-    videoParams = {:title => params[:token][:title], :description => params[:token][:description], :category => 'Education', :keywords => ["Egypt"]}
+    videoParams = {:title => params[:token][:title], :description => params[:token][:description], :category => 'Education', :keywords => ["Egypt"], :private => true}
     upload_info = @client.upload_token(videoParams, "http://localhost:3000/videos/make_new_video?video_id=#{v.id}")
     render :js => "uploadAjax('#{upload_info[:token]}','#{upload_info[:url]}')"
   end
