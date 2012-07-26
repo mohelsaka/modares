@@ -11,20 +11,6 @@ module SurveyorControllerCustomMethods
     super
     # @title = "You can take these surveys"
   end
-  
-  def add_survey
-    @survey = Survey.new
-  end
-  
-  def add_surevey_question
-    
-  end
-  
-  def add_survey_section
-    @section = SurveySection.new
-  end
-  
-  
   def create
     super
   end

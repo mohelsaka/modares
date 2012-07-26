@@ -45,3 +45,5 @@ en:
       text: 'text'
       options: 'options'
       add_option: 'Add option'
+    add_survey_section:
+      question_head: 'Question Head'

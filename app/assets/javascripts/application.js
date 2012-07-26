@@ -91,9 +91,19 @@ function updateFields(item){
 	var str = $(item).val();
 	console.log(str);
 	var parent = $(item).parent();
-   	if( str =='text' || str == 'paragraph text' ){
-   		$('.fields', parent).hide();
-   	}else{
-   		$('.fields', parent).show();
-   	}
+	switch(str){
+		case 'short_answer_question':
+			$('.fields', parent).show();
+			$('p.add-answer-link a.add_nested_fields', parent).html('add short question');
+			break;
+		case 'paragraph_text':
+	   		$('.fields', parent).hide();
+	   		break;
+		case 'multiple_choice':
+			$('.fields', parent).show();
+			break;
+		case 'single_choice':
+			$('.fields', parent).show();
+			break;
+	}
 }
