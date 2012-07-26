@@ -2,7 +2,7 @@ class Question < ActiveRecord::Base
   unloadable
   include Surveyor::Models::QuestionMethods
 
-  QUESTION_TYPES = ['text', 'paragraph text', 'multiple choice', 'single choice']
+  QUESTION_TYPES = ['multiple choice', 'single choice', 'text', 'paragraph text']
   
   before_save :configre_question
   
@@ -18,18 +18,23 @@ class Question < ActiveRecord::Base
   end
   
   def configre_question
-    # if @type == 'text'
-      # self.pick = 'none'
-      # self.display_type = 'default'
-      # # self.response_class = 'string'
-    # elsif @type == 'paragraph text'
-      # self.pick = 'none'
-      # self.display_type = 'default'
-      # # self.response_class = 'text'
-    # elsif @type == 'multiple choice'
-      # self.pick = 'any'
-    # elsif @type == 'multiple choice'
-      # self.pick = 'one'
-    # end
+    puts '######################## reconfigre'
+    if @type == 'text'
+      self.pick = 'none'
+      self.display_type = 'default'
+      # self.answers.clear
+      answer = self.answers.build :response_class => 'string', :display_order => 0, :text => 'Answer'
+      answer.save
+    elsif @type == 'paragraph text'
+      self.pick = 'none'
+      # self.answers.clear
+      answer = self.answers.build :response_class => 'text', :display_order => 0, :text => 'Answer'
+      answer.save
+      self.display_type = 'default'
+    elsif @type == 'multiple choice'
+      self.pick = 'any'
+    elsif @type == 'single choice'
+      self.pick = 'one'
+    end
   end
 end

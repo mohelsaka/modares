@@ -12,7 +12,8 @@ en:
   can_not_vote_up: "You have to get at lease 5 points to vote up"
   can_not_vote_down: "You have to get at lease 25 points to vote down"
   can_not_vote: "You can not vote on you acctivities!"
-    
+  should_enter_questions: "Yout should provide at least one question!"
+  
   users:
     sessions:
       new:

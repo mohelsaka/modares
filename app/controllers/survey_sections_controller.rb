@@ -5,6 +5,14 @@ class SurveySectionsController < ApplicationController
   def create
     @survey_section = SurveySection.new(params[:survey_section])
     
+    # validate for empty survey sections
+    if @survey_section.questions.empty?
+      flash[:notice] = t('.should_enter_questions')
+      redirect_to :controller => :surveyor, :action => :add_survey_section
+      # render :js => "alert('#{t('.should_enter_questions')}');"
+      return
+    end
+    
     @dummey_survey = Survey.new
     @dummey_survey.title = @survey_section.title
     @dummey_survey.save
