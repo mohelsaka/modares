@@ -15,6 +15,7 @@
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.fr
+//= require jquery_nested_form
 $(document).ready(function() {
 	
 	// levels selection drop down list functionalities
@@ -84,4 +85,15 @@ function toggleVotes(targetId, currentVote){
 	// toggling the two buttons
 	$(id+currentVote).addClass('vote-clicked');
 	$(id+currentVoteInv).removeClass('vote-clicked');
+}
+
+function updateFields(item){
+	var str = $(item).val();
+	console.log(str);
+	var parent = $(item).parent();
+   	if( str =='text' || str == 'paragraph text' ){
+   		$('.fields', parent).hide();
+   	}else{
+   		$('.fields', parent).show();
+   	}
 }

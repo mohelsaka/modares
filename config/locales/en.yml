@@ -35,4 +35,12 @@ en:
       user_videos: "User Videos"
       user_video_questions: "User Questions"
       user_video_answers: "User VideoAnswers"
-      user_reputation_history: "User Histroy"   
+      user_reputation_history: "User Histroy"
+  surveyor:
+    add_survey:
+      next: 'next'
+    question_form:
+      type: 'type'
+      text: 'text'
+      options: 'options'
+      add_option: 'Add option'

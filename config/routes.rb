@@ -24,6 +24,17 @@ Modares::Application.routes.draw do
 
   # voting up and down for videos
   match 'videos/:id/vote/:type/:target' => 'videos#vote', :constraints => {:id => /\d+/, :type => /up|down/, :target=>/a|v|q/}, :as => :vote
+
+  #
+  match 'homework/create' => 'surveyor#add_survey', :as => 'homework_create'
+  
+  #
+  match 'homework/create_question' => 'surveyor#add_surevey_question', :as => 'surevey_question'
+  
+  #
+  match 'homework/create_section' => 'surveyor#add_survey_section', :as => 'surevey_section'
+  
+  resources :survey_sections
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

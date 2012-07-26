@@ -1,4 +1,5 @@
 module SurveyorControllerCustomMethods
+  
   def self.included(base)
     # base.send :before_filter, :require_user   # AuthLogic
     # base.send :before_filter, :login_required  # Restful Authentication
@@ -10,6 +11,20 @@ module SurveyorControllerCustomMethods
     super
     # @title = "You can take these surveys"
   end
+  
+  def add_survey
+    @survey = Survey.new
+  end
+  
+  def add_surevey_question
+    
+  end
+  
+  def add_survey_section
+    @section = SurveySection.new
+  end
+  
+  
   def create
     super
   end
@@ -36,4 +51,5 @@ end
 class SurveyorController < ApplicationController
   include Surveyor::SurveyorControllerMethods
   include SurveyorControllerCustomMethods
+  layout "application"
 end
