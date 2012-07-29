@@ -26,7 +26,9 @@ en:
       post: "Post"
       made_by: "made by"
       published_at: "published"
-      add_homework: "add home work"
+      add_homework: "add homework"
+      edit_homework: "edit homework"
+      solve_homework: "solve homework"
     question:
       question-placeholder: "Have a question? write it here and click on post button!"
       post: "Post"

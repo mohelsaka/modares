@@ -26,9 +26,19 @@
             %a{:href=>"#"}
               Twitter
             %a{:href=>"#"}
-              Google        
-        %a#add-homework.btn{:href => surevey_section_creator_url(:video_id => @video.id)}
-          = t('.add_homework')
+              Google
+              
+        -# button for creating or updating homework
+        - if user_signed_in? && @video.user == current_user
+          %a#add-homework.btn{:href => surevey_section_creator_url(:video_id => @video.id)}
+            = @video.survey ? t('.edit_homework') : t('.add_homework')
+        
+        -# button for creating or updating user's response
+        - if user_signed_in? && !@video.survey.nil? && @video.user != current_user
+          - survey = @video.survey
+          = form_tag(take_survey_path(:survey_code => survey.access_code)) do 
+            = hidden_field_tag :surveyor_javascript_enabled, false
+            = submit_tag t('surveyor.take_it'), :class => 'btn' 
     #video-info
       %p
         = t('.made_by')
