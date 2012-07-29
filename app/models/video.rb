@@ -10,18 +10,19 @@ class Video < ActiveRecord::Base
       :source => :user,
       :aggregated_by => :sum
   
-  validates :title, :presence => true
-  validates :user_id, :presence => true
-  validates :subject_id, :presence => true
+  validates :title, :user_id, :subject_id, :presence => true
   def image
     "http://i.ytimg.com/vi/#{url}/mqdefault.jpg"
   end    
+  
   def video_views
-    (User::CLIENT).my_video(url).view_count
+    # (User::CLIENT).my_video(url).view_count
+    0
     # url
   end
   
   def video_duration
     (User::CLIENT).my_video(url).duration
+    0
   end
 end

@@ -12,6 +12,7 @@
  *= require bootstrap-datepicker
  */
 
+
 .btn{
 	color: white;
 }
@@ -55,13 +56,15 @@
 	margin: 0px 4px;
 }
 #video-actions div,a{
-  margin-top: 2px;
 	display: inline-block;
 }
 #video-actions div{
   vertical-align: text-bottom;
   font-size: x-large;
-  padding: 5px;
+}
+#video-actions {
+  height: 30px;
+  margin: 9px 0;
 }
 
 /* Styling Question Area --BEGIN--*/
