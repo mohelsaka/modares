@@ -10,13 +10,7 @@ class Question < ActiveRecord::Base
   accepts_nested_attributes_for :answers, :allow_destroy => true
   attr_accessible :answers_attributes, :display_type, :text, :type
   
-  def type
-    @type
-  end
-  
-  def type=(value)
-    @type = value
-  end
+  attr_accessor :type
   
   def configre_question
     if @type == 'short_answer_question'
