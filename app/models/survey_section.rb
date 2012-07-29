@@ -15,7 +15,7 @@ class SurveySection < ActiveRecord::Base
 
   def must_have_questions
     if questions.empty? or questions.all? {|child| child.marked_for_destruction? }
-      errors.add(:base, 'Must have at least one question!')
+      errors.add(:questions, 'Must have at least one question!')
     end
   end
   
