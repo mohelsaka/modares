@@ -12,4 +12,7 @@
       = f.label :remember_me
   %div= f.submit t(".signin")
 = render "users/shared/links"
-- session[:return_to] = request.fullpath
+  -if request.fullpath != new_user_session_path
+  -session[:return_to] = request.fullpath
+  -else
+  -session[:return_to] = root_url

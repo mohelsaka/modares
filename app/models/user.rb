@@ -12,6 +12,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid,
   :first_name, :last_name, :birth_date, :avatar
 
+  validates :email, :birth_date, :presence => true
+  
   devise :omniauthable
   
   has_many :videos
