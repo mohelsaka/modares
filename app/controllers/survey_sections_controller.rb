@@ -18,7 +18,8 @@ class SurveySectionsController < ApplicationController
     end
 
     if @section.save
-      render :text => 'survey a we bta3 a ya gada3!!! ya raagel ... kabar mo5ak! ;)'
+      flash[:notice] = t('.homework_saved')
+      redirect_to video_path(@section.survey.video.id)
     else
       render :new
     end
@@ -45,7 +46,8 @@ class SurveySectionsController < ApplicationController
     @section = SurveySection.find params[:id]
     
     if @section.update_attributes(params[:survey_section])
-      render :text => 'survey a we bta3 a ya gada3!!! ya raagel ... kabar mo5ak! ;)'
+      flash[:notice] = t('.homework_saved')
+      redirect_to video_path(@section.survey.video.id)
     else
       render :new
     end

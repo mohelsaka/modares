@@ -16,6 +16,8 @@ en:
   can_not_vote: "You can not vote on you acctivities!"
   should_enter_questions: "Yout should provide at least one question!"
   
+  homework_saved: "homework sucessfully updated"
+  
   users:
     sessions:
       new:
