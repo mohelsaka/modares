@@ -4,6 +4,8 @@
 en:
   hello: "Hello world"
   home: "Home"
+  access_denied: "Access denied!"
+  
   layout:
     project_name: "Modares"
   have_to_sign_in: "You have to sign  in!"
@@ -24,6 +26,7 @@ en:
       post: "Post"
       made_by: "made by"
       published_at: "published"
+      add_homework: "add home work"
     question:
       question-placeholder: "Have a question? write it here and click on post button!"
       post: "Post"

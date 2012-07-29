@@ -28,8 +28,8 @@ Modares::Application.routes.draw do
   #
   match 'homework/create_question' => 'surveyor#add_surevey_question', :as => 'surevey_question'
   
-  #
-  match 'homework/create' => 'survey_sections#new', :as => 'surevey_section'
+  # creating survey section as a homework link
+  match 'homework/create/:video_id' => 'survey_sections#new', :as => 'surevey_section_creator', :constraints => {:id => /\d+/}
   
   resources :survey_sections
   

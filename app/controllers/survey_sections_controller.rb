@@ -1,31 +1,53 @@
 class SurveySectionsController < ApplicationController
+  before_filter :check_for_sign_in, :only => [:new]
   
-  # POST /videos
-  # POST /videos.json
   def create
-    @survey_section = SurveySection.new(params[:survey_section])
+    @section = SurveySection.new(params[:survey_section])
     
     # validate for empty survey sections
-    if @survey_section.questions.empty?
-      flash[:notice] = t('.should_enter_questions')
-      redirect_to :action => :new
+    unless @section.valid?
+      render :new
       return
     end
     
-    @dummey_survey = Survey.new
-    @dummey_survey.title = @survey_section.title
-    @dummey_survey.save
-    
-    @survey_section.survey = @dummey_survey
-    @survey_section.save
-    
-    puts @survey_section.inspect
-    
-    render :text => 'survey a we bta3 a ya gada3!!! ya raagel ... kabar mo5ak! ;)'
+    # creating a dummey survey if the section is newly created
+    unless @section.persisted?
+      @dummey_survey = Survey.new(:title => @section.title, :video_id => @section.video_id)
+      @dummey_survey.save
+      @section.survey = @dummey_survey
+    end
+
+    if @section.save
+      render :text => 'survey a we bta3 a ya gada3!!! ya raagel ... kabar mo5ak! ;)'
+    else
+      render :new
+    end
   end
   
   def new
-    @section = SurveySection.new
+    @video = Video.find params[:video_id]
+
+    # check the ownership for the video before adding a homework for it
+    if @video.nil? || current_user != @video.user
+      flash[:notice] = t('access_denied')
+      redirect_to root_url
+      return
+    end
+    
+    @section = if @video.survey
+      @video.survey.sections.first
+    else
+      SurveySection.new(:video_id => @video.id)
+    end
   end
   
+  def update
+    @section = SurveySection.find params[:id]
+    
+    if @section.update_attributes(params[:survey_section])
+      render :text => 'survey a we bta3 a ya gada3!!! ya raagel ... kabar mo5ak! ;)'
+    else
+      render :new
+    end
+  end
 end

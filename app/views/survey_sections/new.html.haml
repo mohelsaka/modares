@@ -1,6 +1,12 @@
+- if @section.errors.any?
+  .alert.alert-block.alert-error.fade.in
+    %a.close{"data-dismiss" => "alert", :href => "#"} ×
+    - @section.errors.full_messages.each do |msg|
+      %li= msg
 = nested_form_for @section do |f|
   = f.label :title, t('.title')
   = f.text_field :title
+  = f.hidden_field :video_id
 
   = f.label :description, t('.description')
   = f.text_area :description, :rows => 5, :cols => 50

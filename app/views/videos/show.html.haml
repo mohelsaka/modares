@@ -27,6 +27,8 @@
               Twitter
             %a{:href=>"#"}
               Google        
+        %a#add-homework.btn{:href => surevey_section_creator_url(:video_id => @video.id)}
+          = t('.add_homework')
     #video-info
       %p
         = t('.made_by')
