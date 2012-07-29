@@ -8,27 +8,25 @@ class Question < ActiveRecord::Base
   before_save :configre_question
   
   accepts_nested_attributes_for :answers, :allow_destroy => true
-  attr_accessible :answers_attributes, :display_type, :text, :type
-  
-  attr_accessor :type
+  attr_accessible :answers_attributes, :display_type, :text, :question_type
   
   def configre_question
-    if @type == 'short_answer_question'
+    if question_type == 'short_answer_question'
       self.pick = 'none'
       self.display_type = 'default'
       self.answers.each{|answer| answer.response_class = 'string'}
 
-    elsif @type == 'paragraph_text'
+    elsif question_type == 'paragraph_text'
       self.pick = 'none'
       self.answers.clear
       answer = self.answers.build :response_class => 'text', :display_order => 0, :text => 'Answer'
       answer.save
       self.display_type = 'default'
 
-    elsif @type == 'multiple_choice'
+    elsif question_type == 'multiple_choice'
       self.pick = 'any'
 
-    elsif @type == 'single_choice'
+    elsif question_type == 'single_choice'
       self.pick = 'one'
     end
   end

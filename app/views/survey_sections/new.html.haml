@@ -13,8 +13,8 @@
   
   = f.fields_for :questions do |question_form|
     %hr
-    = question_form.label 'type'
-    = question_form.select 'type', Question::QUESTION_TYPES,{}, {:onChange => "updateFields(this);"}
+    = question_form.label 'question_type'
+    = question_form.select 'question_type', Question::QUESTION_TYPES,{}, {:onChange => "updateFields(this);"}
     = question_form.label 'text', t('.question_head')
     = question_form.text_area :text, :rows => 2, :cols => 50
     
