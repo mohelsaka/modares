@@ -1,4 +1,9 @@
 %h1 Listing videos
+= link_to 'All' , videos_path()
+>
+= link_to 'Confirmed' , videos_path('confirmed' => "1" )
+>
+= link_to 'UnConfirmed' , videos_path('confirmed' => "0" )
 %table
   %tr
     %th Title
@@ -6,6 +11,7 @@
     %th Views
     %th User
     %th Subject
+    %th
     %th
     %th
     %th
@@ -19,5 +25,7 @@
       %td= link_to 'Show', video
       %td= link_to 'Edit', edit_video_path(video)
       %td= link_to 'Destroy', video, confirm: 'Are you sure?', method: :delete
-%br/
-= link_to 'New Video', new_video_path
+      %td
+        -if video.confirmed == false 
+          = link_to 'Confirm', make_video_public_url(video.id)
+

@@ -1,14 +1,19 @@
 class VideosController < ApplicationController
   before_filter :check_for_sign_in, :only => [:add_answer, :add_question, :vote]
   before_filter :authenticate_user!, :only => [:new, :upload, :make_new_video, :gettoken]
+  before_filter :authenticate_admin!, :only => [:index ,:make_video_public]
   require 'youtube_it'
   # check_authorization
   
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all
-
+    if params[:confirmed]
+      @videos = Video.find_all_by_confirmed params[:confirmed] 
+    else
+      @videos = Video.all
+    end
+      
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @videos }
@@ -59,6 +64,13 @@ class VideosController < ApplicationController
     videoParams = {:title => params[:token][:title], :description => params[:token][:description], :category => 'Education', :keywords => ["Egypt"], :private => true}
     upload_info = User::CLIENT.upload_token(videoParams, "#{make_video_url}?video_id=#{v.id}")
     render :js => "uploadAjax('#{upload_info[:token]}','#{upload_info[:url]}')"
+  end
+  
+  # this method is to make the video public
+  def make_video_public
+    v = Video.find params[:id]
+    v.make_public
+    redirect_to videos_url
   end
   
   

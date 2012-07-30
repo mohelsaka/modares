@@ -7,6 +7,8 @@ Modares::Application.routes.draw do
   
   match 'videos/make_new_video' => 'videos#make_new_video', :as => :make_video
   
+  match 'videos/make_public/:id' => 'videos#make_video_public', :constraints => {:id => /\d+/}, :as => :make_video_public
+  
   resources :videos
 
   devise_for :admins

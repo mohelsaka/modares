@@ -22,7 +22,13 @@ class Video < ActiveRecord::Base
   end
   
   def video_duration
-    (User::CLIENT).my_video(url).duration
+    # (User::CLIENT).my_video(url).duration
     0
   end
+  
+  def make_public 
+      (User::CLIENT).video_update(url, :title => title, :private => false)
+      self.update_attributes(:confirmed => "true")      
+  end
+  
 end
