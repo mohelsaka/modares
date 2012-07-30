@@ -53,6 +53,20 @@ $(document).ready(function() {
 	$("#videos-list").ajaxStart(function() {
 		$(this).html("<img class='offset5' id='ajax-start' src='http://www.w3schools.com/jquery/demo_wait.gif' />");
 	});
+	
+	// this callback is for modifying the type of the correct answer field for new answers according to question type
+	$('.add-nested-answer').live('click', function(event){
+		// getting the question form
+		var question = $(this.parentNode.parentNode);
+		
+		// getting the type of the question
+		var question_type = $('.q-type-select', question).val();
+		
+		// set the type of the correct answer tag
+		var types = {'multiple_choice' : 'checkbox', 'single_choice' : 'radio', 'short_answer_question' : 'text'}
+		var correctAnsTag = $('input.correct_ans:last', question)[0];
+		correctAnsTag.type = types[question_type];
+	});
 });
 
 // this function displays a pop-up error message beside an element specified by the id
@@ -87,23 +101,53 @@ function toggleVotes(targetId, currentVote){
 	$(id+currentVoteInv).removeClass('vote-clicked');
 }
 
+
+/*
+ * this function is called when changing the type of the question (multiple_choice ...) and changes the structure
+ * according to this type.
+ * e.g.
+ * for single choice questions, correct answer chould be taken as a radio button.
+ * but for multiple answer question, correct answer should be taken as a checkbox ... 
+ * */
 function updateFields(item){
 	var str = $(item).val();
-	console.log(str);
 	var parent = $(item).parent();
 	switch(str){
 		case 'short_answer_question':
+			$('.fields input.correct_ans', parent).each(function(index, value){
+				value.type = 'text';
+			});
+		
 			$('.fields', parent).show();
 			$('p.add-answer-link a.add_nested_fields', parent).html('add short question');
 			break;
-		case 'paragraph_text':
-	   		$('.fields', parent).hide();
-	   		break;
 		case 'multiple_choice':
+			$('.fields input.correct_ans', parent).each(function(index, value){
+				value.type = 'checkbox';
+				value.checked = false;
+			});
+			
+			$('p.add-answer-link a.add_nested_fields', parent).html('add answer');
 			$('.fields', parent).show();
 			break;
 		case 'single_choice':
+			$('.fields input.correct_ans', parent).each(function(index, value){
+				value.type = 'radio';
+				value.checked = false;
+			});
+		
+			$('p.add-answer-link a.add_nested_fields', parent).html('add answer');
 			$('.fields', parent).show();
 			break;
+	}
+}
+
+// this is call back is a turnarround making radio button group as attribute name is reserved in case of using nested_form gem
+function updateOtherAnswers(item){
+	if(item.type == 'radio'){
+		var question = $(item.parentNode.parentNode.parentNode);
+		$('input:radio', question).not(item).each(function(index, value){
+			value.checked = false;
+		});
 	}
 }

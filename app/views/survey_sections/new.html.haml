@@ -14,14 +14,16 @@
   = f.fields_for :questions do |question_form|
     %hr
     = question_form.label 'question_type'
-    = question_form.select 'question_type', Question::QUESTION_TYPES,{}, {:onChange => "updateFields(this);"}
+    = question_form.select 'question_type', Question::QUESTION_TYPES,{}, {:onChange => "updateFields(this);", :class => 'q-type-select'}
     = question_form.label 'text', t('.question_head')
     = question_form.text_area :text, :rows => 2, :cols => 50
     
+    - correct_answer_type = Question::CORRECT_ANSWER_TYPE[question_form.object.question_type]
     = question_form.fields_for :answers do |answer_form|
       = answer_form.text_field :text
+      = answer_form.text_field :correct_answer, :type => correct_answer_type , :onChange => 'updateOtherAnswers(this);', :class => 'correct_ans'
       = answer_form.link_to_remove "×"
-    %p.add-answer-link= question_form.link_to_add "Add Answer", :answers
+    %p.add-answer-link= question_form.link_to_add "Add Answer", :answers, {:class => 'add-nested-answer'}
     
     = question_form.link_to_remove "Remove this question"
     
