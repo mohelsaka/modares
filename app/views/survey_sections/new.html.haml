@@ -18,10 +18,18 @@
     = question_form.label 'text', t('.question_head')
     = question_form.text_area :text, :rows => 2, :cols => 50
     
-    - correct_answer_type = Question::CORRECT_ANSWER_TYPE[question_form.object.question_type]
+    - correct_answer_type = Question::CORRECT_ANSWER_TAG_TYPE[question_form.object.question_type]
+    - question_type = question_form.object.question_type
     = question_form.fields_for :answers do |answer_form|
       = answer_form.text_field :text
-      = answer_form.text_field :correct_answer, :type => correct_answer_type , :onChange => 'updateOtherAnswers(this);', :class => 'correct_ans'
+      
+      -if question_type == 'multiple_choice' || question_type == 'single_choice'
+        - tag_class = answer_form.object.correct_answer == 'on' ? 'correct_ans checked' : 'correct_ans'
+        = answer_form.hidden_field :correct_answer, :value => 'off'
+        = answer_form.text_field :correct_answer, :type => correct_answer_type, :value => 'on', :onChange => 'updateOtherAnswers(this);', :class => tag_class
+      -elsif question_type == 'short_answer_question'
+        = answer_form.text_field :correct_answer, :onChange => 'updateOtherAnswers(this);', :class => 'correct_ans'
+      
       = answer_form.link_to_remove "×"
     %p.add-answer-link= question_form.link_to_add "Add Answer", :answers, {:class => 'add-nested-answer'}
     

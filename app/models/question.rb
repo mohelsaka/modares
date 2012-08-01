@@ -3,7 +3,7 @@ class Question < ActiveRecord::Base
   include Surveyor::Models::QuestionMethods
 
   QUESTION_TYPES = ['multiple_choice', 'single_choice', 'short_answer_question']
-  CORRECT_ANSWER_TYPE =  {'multiple_choice' => 'checkbox', 'single_choice' => 'radio', 'short_answer_question' => 'text'}
+  CORRECT_ANSWER_TAG_TYPE =  {'multiple_choice' => 'checkbox', 'single_choice' => 'radio', 'short_answer_question' => 'text'}
   
   before_validation :initialize_display_orders
   before_save :configre_question
@@ -44,4 +44,5 @@ private
       errors.add(:answers, 'Yout must provide at least one short question.')
     end
   end
+  
 end

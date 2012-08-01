@@ -67,6 +67,9 @@ $(document).ready(function() {
 		var correctAnsTag = $('input.correct_ans:last', question)[0];
 		correctAnsTag.type = types[question_type];
 	});
+	
+	// this is a turn arround for initializing checkboxs and radio buttons as checked
+	$('input.checked').each(function(index, item){item.checked = true;});
 });
 
 // this function displays a pop-up error message beside an element specified by the id
