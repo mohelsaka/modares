@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid,
   :first_name, :last_name, :birth_date, :avatar
 
-  validates :email, :birth_date, :presence => true
+  validates :email, :presence => true
   
   devise :omniauthable
   
@@ -72,8 +72,10 @@ class User < ActiveRecord::Base
   end
   
   def age
-    now = Time.now.utc.to_date
-    now.year - birth_date.year - (birth_date.to_date.change(:year => now.year) > now ? 1 : 0)
+    if birth_date
+      now = Time.now.utc.to_date
+      now.year - birth_date.year - (birth_date.to_date.change(:year => now.year) > now ? 1 : 0)
+    end
   end
   
   # returns the vote value for object which was voted by this user
