@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid,
-  :first_name, :last_name, :birth_date, :avatar
+  :first_name, :last_name, :birth_date, :avatar, :avatar_file_name
 
   devise :omniauthable
   
@@ -43,16 +43,23 @@ class User < ActiveRecord::Base
       
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first
+    # puts auth.extra.raw_info.birthday.class
+    # request.env['omniauth.auth'] = auth
+    # debugger
     unless user
-    user = User.create(name:auth.extra.raw_info.name,
-                  provider:auth.provider,
-                  uid:auth.uid,
-                  email:auth.info.email,
-                  password:Devise.friendly_token[0,20],
-                  first_name:auth.info.first_name,
-                  last_name:auth.info.last_name
-                )
+      user = User.create(
+                    birth_date:Date.strptime(auth.extra.raw_info.birthday, '%m/%d/%Y'),
+                    provider:auth.provider,
+                    uid:auth.uid,
+                    email:auth.info.email,
+                    avatar_file_name:auth.info.image,
+                    password:Devise.friendly_token[0,20],
+                    first_name:auth.info.first_name,
+                    last_name:auth.info.last_name
+                  )
+    puts user.birth_date 
     end
+    
     user
   end
   
@@ -86,4 +93,12 @@ class User < ActiveRecord::Base
   def can_vote_for?(object)
     object.user != self
   end
+  def image
+    if provider == "facebook"
+      avatar_file_name
+    else
+      avatar.url(:medium)
+    end
+  end
+  
 end

@@ -7,7 +7,7 @@
 %hr
 %div.row
   .avatar.span3
-    = image_tag @user.avatar.url(:medium) 
+    = image_tag @user.image 
     .label.label-success.span1
       = @user.reputation_value_for(:points).to_s
   .divider-vertical    

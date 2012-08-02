@@ -30,8 +30,6 @@ GEM
       activesupport (= 3.1.1)
     activesupport (3.1.1)
       multi_json (~> 1.0)
-    acts_as_votable (0.3.1)
-      rails (>= 3.0.0)
     ansi (1.4.3)
     arel (2.2.3)
     bcrypt-ruby (3.0.1)
@@ -176,7 +174,6 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-reputation-system
-  acts_as_votable
   bootstrap-datepicker-rails
   cancan
   coffee-rails (~> 3.1.1)
