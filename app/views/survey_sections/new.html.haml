@@ -1,0 +1,42 @@
+.alert.alert-block.alert-error.fade.in
+  = error_messages_for :section
+= nested_form_for @section do |f|
+  = f.label :title, t('.title')
+  = f.text_field :title
+  = f.hidden_field :video_id
+
+  = f.label :description, t('.description')
+  = f.text_area :description, :rows => 5, :cols => 50
+  
+  = f.fields_for :questions do |question_form|
+    %hr
+    = question_form.label 'question_type'
+    = question_form.select 'question_type', Question::QUESTION_TYPES,{}, {:onChange => "updateFields(this);", :class => 'q-type-select'}
+    = question_form.label 'text', t('.question_head')
+    = question_form.text_area :text, :rows => 2, :cols => 50
+    
+    - correct_answer_type = Question::CORRECT_ANSWER_TAG_TYPE[question_form.object.question_type]
+    - question_type = question_form.object.question_type
+    = question_form.fields_for :answers do |answer_form|
+      = answer_form.text_field :text
+      
+      -if question_type == 'multiple_choice' || question_type == 'single_choice'
+        - tag_class = answer_form.object.correct_answer == 'on' ? 'correct_ans checked' : 'correct_ans'
+        = answer_form.hidden_field :correct_answer, :value => 'off'
+        = answer_form.text_field :correct_answer, :type => correct_answer_type, :value => 'on', :onChange => 'updateOtherAnswers(this);', :class => tag_class
+      -elsif question_type == 'short_answer_question'
+        = answer_form.text_field :correct_answer, :onChange => 'updateOtherAnswers(this);', :class => 'correct_ans'
+      
+      = answer_form.link_to_remove "×"
+    %p.add-answer-link= question_form.link_to_add t('add_answer'), :answers, {:class => 'add-nested-answer'}
+    
+    = question_form.link_to_remove t('remove_question')
+    
+  %p= f.link_to_add t('add_question'), :questions
+  = f.submit t('submit')
+
+:javascript
+  var add_short_question = "#{t('add_short_question')}";
+  var add_answer = "#{t('add_answer')}";
+
+

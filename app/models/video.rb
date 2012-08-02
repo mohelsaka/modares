@@ -6,6 +6,8 @@ class Video < ActiveRecord::Base
   
   has_many :video_questions
   
+  has_one :survey
+  
    has_reputation :votes,
       :source => :user,
       :aggregated_by => :sum

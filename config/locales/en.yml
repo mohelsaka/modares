@@ -4,6 +4,8 @@
 en:
   hello: "Hello world"
   home: "Home"
+  access_denied: "Access denied!"
+  
   layout:
     project_name: "Modares"
   have_to_sign_in: "You have to sign  in!"
@@ -12,7 +14,18 @@ en:
   can_not_vote_up: "You have to get at lease 5 points to vote up"
   can_not_vote_down: "You have to get at lease 25 points to vote down"
   can_not_vote: "You can not vote on you acctivities!"
-    
+  should_enter_questions: "Yout should provide at least one question!"
+  
+  homework_saved: "homework sucessfully updated"
+  add_short_question: "add short question"
+  add_answer: "add answer"
+  question_error_two_answers_at_least: "Must have at least two answers"
+  question_error_one_short_question_at_least: "Yout must provide at least one short question."
+  survey_section_one_question_at_least : "Must have at least one question!"
+  remove_question: "remove this question"
+  add_question: "Add a question"
+  submit: "Submit"
+  
   users:
     sessions:
       new:
@@ -23,6 +36,9 @@ en:
       post: "Post"
       made_by: "made by"
       published_at: "published"
+      add_homework: "add homework"
+      edit_homework: "edit homework"
+      solve_homework: "solve homework"
     question:
       question-placeholder: "Have a question? write it here and click on post button!"
       post: "Post"
@@ -35,4 +51,14 @@ en:
       user_videos: "User Videos"
       user_video_questions: "User Questions"
       user_video_answers: "User VideoAnswers"
-      user_reputation_history: "User Histroy"   
+      user_reputation_history: "User Histroy"
+  surveyor:
+    add_survey:
+      next: 'next'
+    question_form:
+      type: 'type'
+      text: 'text'
+      options: 'options'
+      add_option: 'Add option'
+    add_survey_section:
+      question_head: 'Question Head'
