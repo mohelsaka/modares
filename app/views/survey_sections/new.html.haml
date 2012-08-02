@@ -1,8 +1,5 @@
-- if @section.errors.any?
-  .alert.alert-block.alert-error.fade.in
-    %a.close{"data-dismiss" => "alert", :href => "#"} ×
-    - @section.errors.full_messages.each do |msg|
-      %li= msg
+.alert.alert-block.alert-error.fade.in
+  = error_messages_for :section
 = nested_form_for @section do |f|
   = f.label :title, t('.title')
   = f.text_field :title
@@ -31,9 +28,9 @@
         = answer_form.text_field :correct_answer, :onChange => 'updateOtherAnswers(this);', :class => 'correct_ans'
       
       = answer_form.link_to_remove "×"
-    %p.add-answer-link= question_form.link_to_add "Add Answer", :answers, {:class => 'add-nested-answer'}
+    %p.add-answer-link= question_form.link_to_add t('add_answer'), :answers, {:class => 'add-nested-answer'}
     
-    = question_form.link_to_remove "Remove this question"
+    = question_form.link_to_remove t('remove_question')
     
-  %p= f.link_to_add "Add a question", :questions
-  = f.submit 'Submit'
+  %p= f.link_to_add t('add_question'), :questions
+  = f.submit t('submit')

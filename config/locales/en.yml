@@ -17,6 +17,14 @@ en:
   should_enter_questions: "Yout should provide at least one question!"
   
   homework_saved: "homework sucessfully updated"
+  add_short_question: "add short question"
+  add_answer: "add answer"
+  question_error_two_answers_at_least: "Must have at least two answers"
+  question_error_one_short_question_at_least: "Yout must provide at least one short question."
+  survey_section_one_question_at_least : "Must have at least one question!"
+  remove_question: "remove this question"
+  add_question: "Add a question"
+  submit: "Submit"
   
   users:
     sessions:

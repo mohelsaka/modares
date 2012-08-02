@@ -1,22 +1,11 @@
 class SurveySectionsController < ApplicationController
-  before_filter :check_for_sign_in, :only => [:new]
-  
+  before_filter :authenticate_user!
+    
   def create
+    video = current_user.videos.find params[:survey_section][:video_id]
+    
     @section = SurveySection.new(params[:survey_section])
     
-    # validate for empty survey sections
-    unless @section.valid?
-      render :new
-      return
-    end
-    
-    # creating a dummey survey if the section is newly created
-    unless @section.persisted?
-      @dummey_survey = Survey.new(:title => @section.title, :video_id => @section.video_id)
-      @dummey_survey.save
-      @section.survey = @dummey_survey
-    end
-
     if @section.save
       flash[:notice] = t('.homework_saved')
       redirect_to video_path(@section.survey.video.id)
@@ -26,15 +15,8 @@ class SurveySectionsController < ApplicationController
   end
   
   def new
-    @video = Video.find params[:video_id]
+    @video = current_user.videos.find params[:video_id]
 
-    # check the ownership for the video before adding a homework for it
-    if @video.nil? || current_user != @video.user
-      flash[:notice] = t('access_denied')
-      redirect_to root_url
-      return
-    end
-    
     @section = if @video.survey
       @video.survey.sections.first
     else
@@ -44,6 +26,7 @@ class SurveySectionsController < ApplicationController
   
   def update
     @section = SurveySection.find params[:id]
+    video = current_user.videos.find @section.survey.video_id
     
     if @section.update_attributes(params[:survey_section])
       flash[:notice] = t('.homework_saved')

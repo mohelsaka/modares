@@ -14,6 +14,7 @@ gem "paperclip", "~> 3.0"
 gem "cancan"
 gem "surveyor"
 gem "nested_form", :git => 'git://github.com/mohelsaka/nested_form.git'
+gem "dynamic_form"
 
 #adding reputition system
 gem 'activerecord-reputation-system', :require => 'reputation_system'

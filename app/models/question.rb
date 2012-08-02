@@ -11,10 +11,13 @@ class Question < ActiveRecord::Base
   accepts_nested_attributes_for :answers, :allow_destroy => true
   attr_accessible :answers_attributes, :display_type, :text, :question_type
   
+  attr_protected :survey_section
+  
   # validate the number of answers in for each type of questions
   # e.g. choice questions should have more than one choice.
   validate :validate_num_of_answers
-  
+
+protected  
   # this function applys the configration for each question type
   # for more information check surveyor gem : file doc/question_types.png
   def configre_question
@@ -32,16 +35,16 @@ class Question < ActiveRecord::Base
   end
   
   def initialize_display_orders
-    order = 1
-    answers.each{|answer| answer.display_order = (order += 1) unless answer.display_order}
+    self.answers.each_with_index{|item, index| item.display_order ||= index+1}
   end
   
-private
   def validate_num_of_answers
-    if ['multiple_choice', 'single_choice'].include? question_type && answers.size < 2
-      errors.add(:answers, 'Must have at least two answers')
+    if ['multiple_choice', 'single_choice'].include?(question_type) && answers.size < 2
+      errors.add(:answers, I18n.translate('question_error_two_answers_at_least'))
+      return false
     elsif question_type == 'short_answer_question' && answers.size < 1
-      errors.add(:answers, 'Yout must provide at least one short question.')
+      errors.add(:answers, I18n.translate('question_error_one_short_question_at_least'))
+      return false
     end
   end
   
