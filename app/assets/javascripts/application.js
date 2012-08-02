@@ -122,7 +122,7 @@ function updateFields(item){
 			});
 		
 			$('.fields', parent).show();
-			$('p.add-answer-link a.add_nested_fields', parent).html('add short question');
+			$('p.add-answer-link a.add_nested_fields', parent).html(add_short_question);
 			break;
 		case 'multiple_choice':
 			$('.fields input.correct_ans', parent).each(function(index, value){
@@ -130,7 +130,7 @@ function updateFields(item){
 				value.checked = false;
 			});
 			
-			$('p.add-answer-link a.add_nested_fields', parent).html('add answer');
+			$('p.add-answer-link a.add_nested_fields', parent).html(add_answer);
 			$('.fields', parent).show();
 			break;
 		case 'single_choice':
@@ -139,7 +139,7 @@ function updateFields(item){
 				value.checked = false;
 			});
 		
-			$('p.add-answer-link a.add_nested_fields', parent).html('add answer');
+			$('p.add-answer-link a.add_nested_fields', parent).html(add_answer);
 			$('.fields', parent).show();
 			break;
 	}
