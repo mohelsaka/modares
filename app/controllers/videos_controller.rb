@@ -16,6 +16,10 @@ class VideosController < ApplicationController
   # GET /videos/1.json
   def show
     @video = Video.find(params[:id])
+    video_view = VideoView.new
+    video_view.user_id = current_user.id
+    video_view.video_id = @video.id
+    video_view.save
     @question = Question.new
     @answer = Answer.new
     

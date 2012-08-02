@@ -6,5 +6,7 @@ class Video < ActiveRecord::Base
   
   has_many :questions
   
+  has_many :video_view
+  
   acts_as_votable
 end

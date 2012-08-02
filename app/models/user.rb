@@ -20,6 +20,8 @@ class User < ActiveRecord::Base
 
   acts_as_voter
   
+  has_many :video_view
+  
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first
     unless user
