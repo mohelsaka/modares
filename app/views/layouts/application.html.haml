@@ -55,6 +55,7 @@
                           =link_to(t('.log_out'), destroy_user_session_path, :method => :delete)   
           / /.nav-collapse
     .container
+      %p#notice= notice
       = yield
     #error-msg.hidden
       %a.close-error{:onClick => "$(this).parent().addClass('hidden');"}
