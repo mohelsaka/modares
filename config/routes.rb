@@ -13,6 +13,9 @@ Modares::Application.routes.draw do
   
   resources :users
   
+  # routes for taking homework question  
+  match 'homework/:survey_code/solve', :to => 'surveyor#edit', :as => 'take_homework', :via => :get
+  
   # matching profiles/user_id e.g. profiles/4
   match 'profiles/:id' => 'profiles#profile', :constraints => {:id => /\d+/}, :as => :profiles
   

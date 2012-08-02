@@ -17,8 +17,20 @@ module SurveyorControllerCustomMethods
   def show
     super
   end
+  
+  # this action checks if the user have already taken this survey then displaying his response
+  # else create new empty response
   def edit
-    super
+    if params[:response_set_code]
+      super
+    else
+      @survey = Survey.find_by_access_code(params[:survey_code])
+      response_set_code = ResponseSet.where(:user_id => current_user.id, :survey_id => @survey.id).first.try(:access_code)
+      
+      response_set_code = ResponseSet.create(:survey => @survey, :user_id => current_user.id).access_code unless response_set_code
+      
+      redirect_to edit_my_survey_url(:survey_code => @survey.access_code, :response_set_code => response_set_code)
+    end
   end
   def update
     super
