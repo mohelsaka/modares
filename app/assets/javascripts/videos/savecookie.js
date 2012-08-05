@@ -28,7 +28,8 @@ function deleteCookie(name) {
 }
 
 function startCookie(){
-	setCookie(videoId, ytplayer.getCurrentTime()/ytplayer.getDuration() ,365) ;
+	setCookie("videoId", videoId ,365) ;
+	setCookie("watchPercent", ytplayer.getCurrentTime()/ytplayer.getDuration() ,365) ;
 	setTimeout(startCookie,3000);
 }
 
