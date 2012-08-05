@@ -1,3 +1,8 @@
+:javascript
+  var params = { allowScriptAccess: "always" };
+  var atts = { id: "myytplayer" };
+  var videoId = "#{@video.url}"
+  swfobject.embedSWF("http://www.youtube.com/v/"+videoId+"?enablejsapi=1&playerapiid=ytplayer&version=3","ytapiplayer", "850", "450", "8", null, null, params, atts);
 .row.fluid
   .span9
     %p#notice= notice
@@ -8,7 +13,8 @@
         = [@video.subject.name, @video.subject.semester.name, @video.subject.semester.level.name].join(' < ')
     %br
     %hr
-    %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "http://www.youtube.com/embed/#{@video.url}", :width => "870"}  
+    #ytapiplayer
+      You need Flah player  
     #video-actions
       .btn-group
         =render :partial =>'videos/voting_actions', :locals => { :target => 'v' , :object => @video }
