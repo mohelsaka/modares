@@ -16,10 +16,17 @@ class VideosController < ApplicationController
   # GET /videos/1.json
   def show
     @video = Video.find(params[:id])
-    video_view = VideoView.new
-    video_view.user_id = current_user.id
-    video_view.video_id = @video.id
-    video_view.save
+    video_view = VideoView.where("user_id = ? AND video_id = ?", current_user.id, @video.id ).first
+    unless(video_view)
+      video_view = VideoView.new
+      video_view.user_id = current_user.id
+      video_view.video_id = @video.id
+      video_view.views = 1
+      video_view.save
+    else
+      video_view.update_attributes(:views => video_view.views + 1)
+    end
+        
     @question = Question.new
     @answer = Answer.new
     
