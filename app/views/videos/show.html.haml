@@ -1,8 +1,9 @@
 :javascript
   var params = { allowScriptAccess: "always" };
   var atts = { id: "myytplayer" };
-  var videoId = "#{@video.url}"
-  swfobject.embedSWF("http://www.youtube.com/v/"+videoId+"?enablejsapi=1&playerapiid=ytplayer&version=3","ytapiplayer", "850", "450", "8", null, null, params, atts);
+  var videoId = "#{@video.id}"
+  var videoURl = "#{@video.url}"
+  swfobject.embedSWF("http://www.youtube.com/v/"+videoURl+"?enablejsapi=1&playerapiid=ytplayer&version=3","ytapiplayer", "850", "450", "8", null, null, params, atts);
 .row.fluid
   .span9
     %p#notice= notice
