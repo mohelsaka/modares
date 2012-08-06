@@ -36,6 +36,9 @@ Modares::Application.routes.draw do
   
   resources :survey_sections
   
+  #
+  match 'finish' => 'surveyor#surveyor_finish', :as => 'finish_homework'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
