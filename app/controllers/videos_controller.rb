@@ -18,11 +18,7 @@ class VideosController < ApplicationController
     @video = Video.find(params[:id])
     video_view = VideoView.where("user_id = ? AND video_id = ?", current_user.id, @video.id ).first
     unless(video_view)
-      video_view = VideoView.new
-      video_view.user_id = current_user.id
-      video_view.video_id = @video.id
-      video_view.views = 1
-      video_view.save
+      VideoView.create(:user_id => current_user.id, :video_id => @video.id, :views => 1  )
     else
       video_view.update_attributes(:views => video_view.views + 1)
     end
