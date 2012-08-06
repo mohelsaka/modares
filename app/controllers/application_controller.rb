@@ -10,16 +10,9 @@ class ApplicationController < ActionController::Base
   end
   
   def get_redirect_path
-    # puts request.referer
-    # puts params[:controller]
     unless (params[:controller] =~ %r"devise")
       session[:return_to] = root_url  
     end
-      
-    # else
-      # session[:return_to] = request.fullpath
-    # end
-    # puts session[:return_to]
   end
 protected
   def check_for_sign_in
