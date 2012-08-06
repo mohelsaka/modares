@@ -1,0 +1,11 @@
+- @finished ||= false
+-if @finished
+  #exercise_result
+    = render '/partials/homework_result'
+  %hr
+#surveyor
+  = semantic_form_for(@response_set, :as => :r, :url => update_my_survey_path, :html => {:method => :put, :id => "survey_form", :class => @survey.custom_class}) do |f|
+  
+    = render "/partials/section", :f => f, :disableFlag => @finished
+    .next_section= next_section unless @finished
+  %br
