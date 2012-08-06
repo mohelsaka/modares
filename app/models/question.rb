@@ -17,6 +17,14 @@ class Question < ActiveRecord::Base
   # e.g. choice questions should have more than one choice.
   validate :validate_num_of_answers
 
+  def correct_answers
+    if ['multiple_choice', 'single_choice'].include?(self.question_type)
+      self.answers.where(:correct_answer => 'on')
+    elsif self.question_type == 'short_answer_question'
+      self.answers
+    end
+  end
+
 protected  
   # this function applys the configration for each question type
   # for more information check surveyor gem : file doc/question_types.png
