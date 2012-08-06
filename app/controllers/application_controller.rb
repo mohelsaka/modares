@@ -10,9 +10,12 @@ class ApplicationController < ActionController::Base
   end
   
   def get_redirect_path
-    puts request.referer
-    # if (request.fullpath == new_user_session_path || request.fullpath == new_user_registration_path || request.fullpath == users_path)
-      # session[:return_to] = root_url  
+    # puts request.referer
+    # puts params[:controller]
+    unless (params[:controller] =~ %r"devise")
+      session[:return_to] = root_url  
+    end
+      
     # else
       # session[:return_to] = request.fullpath
     # end
@@ -29,11 +32,6 @@ protected
 
   # overwriting after_sign_in_path_for of devise gem to return the user to the same location after sign in
   def after_sign_in_path_for(resource)
-    puts request.fullpath
-    if (request.fullpath =~ %r"/users") != 0 && (request.fullpath =~ %r"/admins") != 0 
-      request.fullpath
-    else
-      ''
-    end  
+    session[:return_to] || ''
   end
 end
