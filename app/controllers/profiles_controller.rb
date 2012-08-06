@@ -6,15 +6,14 @@ class ProfilesController < ApplicationController
   end
   
   def private_score
-   
-    if(current_user.score_private)
-      current_user.score_private = false;
+    
+    current_user.score_private = !current_user.score_private
+    current_user.save
+    if current_user.score_private
       render :js => "$('#score').html('Public');$('#private-link').html('Make your score private');"
     else
-      current_user.score_private = true;
       render :js => "$('#score').html('Private');$('#private-link').html('Make your score public');"
     end 
-    current_user.save
    
   end
     
