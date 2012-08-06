@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
-  before_filter :save_cookies
+  before_filter :save_watche_percentage_cookies
   protect_from_forgery
 
 
-  def save_cookies
+  def save_watche_percentage_cookies
     if(cookies[:videoId])
       video_view = VideoView.where("user_id = ? AND video_id = ?", current_user.id,  cookies[:videoId] ).first
       current_watch_percentage = video_view.watch_percentage
