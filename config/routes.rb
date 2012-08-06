@@ -25,6 +25,9 @@ Modares::Application.routes.draw do
   # voting up and down for videos
   match 'videos/:id/vote/:type/:target' => 'videos#vote', :constraints => {:id => /\d+/, :type => /up|down/, :target=>/a|v|q/}, :as => :vote
   
+  # make score private ot public
+  match 'profiles/private_score' => 'profiles#private_score', :as => :private_score
+    
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

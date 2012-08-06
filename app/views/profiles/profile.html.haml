@@ -2,14 +2,28 @@
   -if user_signed_in? && params[:id].to_i == current_user.id
     .btn-group.pull-right.edit-profile-group
       = link_to t('.edit'), edit_user_registration_path, {:class =>"btn"}
+    
+      
   %h3
     = @user.name
 %hr
 %div.row
-  .avatar.span3
-    = image_tag @user.image 
-    .label.label-success.span1
-      = @user.reputation_value_for(:points).to_s
+  %center
+    .avatar
+      = image_tag @user.image
+      %div 
+        -if user_signed_in? && current_user.id == @user.id
+          %span.label.label-success
+            = @user.score
+          %span.label.label-success#score
+            = @user.score_private ? t(".private") : t(".public")
+          %br  
+          = link_to @user.score_private ? "Make your score public"  : "Make your score private" , private_score_url, :id => "private-link", :remote => true
+        -else
+          -unless @user.score_private
+            %span.label.label-success#score
+              = @user.score     
+            
   .divider-vertical    
   .profile-info.span3
     %div

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120722135035) do
+ActiveRecord::Schema.define(:version => 20120806123054) do
 
   create_table "admins", :force => true do |t|
     t.string   "email"
@@ -43,6 +43,19 @@ ActiveRecord::Schema.define(:version => 20120722135035) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "rates", :force => true do |t|
+    t.integer  "rater_id"
+    t.integer  "rateable_id"
+    t.string   "rateable_type"
+    t.integer  "stars",         :null => false
+    t.string   "dimension"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "rates", ["rateable_id", "rateable_type"], :name => "index_rates_on_rateable_id_and_rateable_type"
+  add_index "rates", ["rater_id"], :name => "index_rates_on_rater_id"
 
   create_table "rs_evaluations", :force => true do |t|
     t.string   "reputation_name"
@@ -104,6 +117,7 @@ ActiveRecord::Schema.define(:version => 20120722135035) do
     t.integer  "semester_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "users", :force => true do |t|
@@ -129,10 +143,20 @@ ActiveRecord::Schema.define(:version => 20120722135035) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.string   "about_me"
+    t.boolean  "score_private"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "video_views", :force => true do |t|
+    t.integer  "video_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "views"
+    t.integer  "watch_percentage"
+  end
 
   create_table "videos", :force => true do |t|
     t.string   "title"
@@ -148,6 +172,7 @@ ActiveRecord::Schema.define(:version => 20120722135035) do
     t.datetime "icon_updated_at"
     t.string   "description"
     t.integer  "duration",          :default => 0
+    t.boolean  "confirmed"
   end
 
 end

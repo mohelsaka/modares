@@ -101,4 +101,7 @@ class User < ActiveRecord::Base
     end
   end
   
+  def score
+    reputation_value_for(:points).to_s
+  end  
 end
