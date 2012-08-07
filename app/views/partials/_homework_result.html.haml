@@ -1,6 +1,6 @@
 .total_mark
   %h3= t('.total_mark')
-  %h2= "#{@response_set.total_mark} / #{@response_set.full_mark}"
+  %h2= "#{@response_set.total_mark.round(2)} / #{@response_set.full_mark}"
 .elapsed_time
   %h3= t('.elapsed_time')
   %h2= duration_format(@response_set.elapsed_time)
