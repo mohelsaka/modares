@@ -13,6 +13,9 @@ Modares::Application.routes.draw do
   
   resources :users
   
+  # routes for taking homework question  
+  match 'homework/:survey_code/solve', :to => 'surveyor#edit', :as => 'take_homework', :via => :get
+  
   # matching profiles/user_id e.g. profiles/4
   match 'profiles/:id' => 'profiles#profile', :constraints => {:id => /\d+/}, :as => :profiles
   
@@ -32,6 +35,9 @@ Modares::Application.routes.draw do
   match 'homework/create/:video_id' => 'survey_sections#new', :as => 'surevey_section_creator', :constraints => {:id => /\d+/}
   
   resources :survey_sections
+  
+  #
+  match 'finish' => 'surveyor#surveyor_finish', :as => 'finish_homework'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

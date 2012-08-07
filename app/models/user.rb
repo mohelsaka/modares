@@ -20,6 +20,7 @@ class User < ActiveRecord::Base
 
   has_many :video_answers
   
+  has_many :response_sets
   #-------------- 
   has_reputation :points,
       :source => [
