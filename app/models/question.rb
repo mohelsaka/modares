@@ -24,6 +24,23 @@ class Question < ActiveRecord::Base
       self.answers
     end
   end
+  
+  # calculate marks for the given user reponsese
+  def evaluate_responses(responses)
+    case self.question_type
+    when 'single_choice', 'short_answer_question'
+      responses.sum(:correct_flag)
+
+    when 'multiple_choice'
+      self.answers.inject(0.0) do |value, answer|
+        exisited = responses.exists?(:answer_id => answer.id)
+        correctly_checked = answer.correct_answer == 'on' && exisited 
+        correctly_unchecked = correctly_checked || (answer.correct_answer == 'off' && !exisited)
+        
+        value += (correctly_checked || correctly_unchecked) ? (1 / self.answers.size.to_f) : 0.0
+      end
+    end
+  end
 
 protected  
   # this function applys the configration for each question type
