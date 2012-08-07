@@ -1,0 +1,7 @@
+- disabled = defined?(disableFlag) ? disableFlag : false
+= div_for @section, :class => @section.custom_class do
+  %h2.title= @section.title
+  %p= @section.description
+  - qs ||= []
+  - @section.questions.each_with_index do |q, i|
+    = render q.custom_renderer || "/partials/question", :q => q, :f => f, :disableFlag => disabled 

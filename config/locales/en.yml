@@ -62,3 +62,7 @@ en:
       add_option: 'Add option'
     add_survey_section:
       question_head: 'Question Head'
+  partials:
+    homework_result:
+      elapsed_time: 'Elapsed Time'
+      total_mark: 'Total Mark'

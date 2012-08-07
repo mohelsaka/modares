@@ -35,10 +35,8 @@
         
         -# button for creating or updating user's response
         - if user_signed_in? && !@video.survey.nil? && @video.user != current_user
-          - survey = @video.survey
-          = form_tag(take_survey_path(:survey_code => survey.access_code)) do 
-            = hidden_field_tag :surveyor_javascript_enabled, false
-            = submit_tag t('surveyor.take_it'), :class => 'btn' 
+          = link_to t('surveyor.take_it'), take_homework_url(:survey_code => @video.survey.access_code), :class => 'btn'
+          
     #video-info
       %p
         = t('.made_by')
