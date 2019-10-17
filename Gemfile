@@ -10,7 +10,7 @@ gem 'devise'
 gem "omniauth-facebook"
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap-datepicker-rails'
-gem "paperclip", "~> 3.0"
+gem "paperclip", "~> 4.2"
 gem "cancan"
 
 #adding reputition system
